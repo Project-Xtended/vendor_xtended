@@ -1,8 +1,5 @@
 #!/bin/sh
 
-# Exports
-. $ANDROID_BUILD_TOP/vendor/titanium/tools/colors
-
 export Changelog=Changelog.txt
 
 if [ -f $Changelog ];
@@ -12,13 +9,13 @@ fi
 
 touch $Changelog
 
-echo ${bldppl}"Generating changelog..."${txtrst}
+echo "Generating changelog..."
 
 for i in $(seq 14);
 do
-export After_Date=`date --date="$i days ago" +%m-%d-%Y`
+export After_Date=`date --date="$i days ago" +%Y/%m/%d`
 k=$(expr $i - 1)
-	export Until_Date=`date --date="$k days ago" +%m-%d-%Y`
+	export Until_Date=`date --date="$k days ago" +%Y/%m/%d`
 
 	# Line with after --- until was too long for a small ListView
 	echo '=======================' >> $Changelog;
