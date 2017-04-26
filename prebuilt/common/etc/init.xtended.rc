@@ -3,3 +3,8 @@ on post-fs-data
     chown system system /sys/class/power_supply/battery/battery_charging_enabled
     chown system system /sys/class/power_supply/battery/charging_enabled
     chown system system /sys/class/power_supply/battery/input_suspend
+
+on boot
+    # allow system to communicate pocket state
+    chown system system /sys/kernel/pocket_judge/inpocket
+
