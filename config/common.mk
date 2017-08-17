@@ -162,6 +162,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     MsmPapers
 
+# Disable vendor restrictions
+PRODUCT_RESTRICT_VENDOR_FILES := false
+
 # Extra Optional packages
 PRODUCT_PACKAGES += \
     Calculator \
