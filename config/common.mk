@@ -182,6 +182,9 @@ PRODUCT_COPY_FILES += \
 endif
 endif
 
+# Themes
+$(call inherit-product-if-exists, vendor/xtended/products/themes.mk)
+
 # Versioning System
 # Xtended first version.
 PRODUCT_VERSION_MAJOR = 8.1
