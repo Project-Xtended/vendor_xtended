@@ -93,6 +93,10 @@ PRODUCT_PACKAGES += \
     LatinIME \
     BluetoothExt
 
+# Xtended Packages
+PRODUCT_PACKAGES += \
+    Xtended \
+    Camera
 
 # Extra tools
 PRODUCT_PACKAGES += \
