@@ -234,6 +234,10 @@ PRODUCT_PACKAGES += \
     AndroidDarkThemeOverlay \
     SettingsDarkThemeOverlay
 
+# Dex preopt
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    SystemUIGoogle
+
 # Common overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/xtended/overlay/common
 
