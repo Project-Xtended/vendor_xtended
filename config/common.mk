@@ -91,12 +91,21 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Calculator \
     LatinIME \
-    BluetoothExt
+    BluetoothExt \
+    OmniJaws
 
 # Xtended Packages
 PRODUCT_PACKAGES += \
     Xtended \
     Camera
+
+# DU Utils Library
+PRODUCT_BOOT_JARS += \
+    org.dirtyunicorns.utils
+
+# DU Utils Library
+PRODUCT_PACKAGES += \
+    org.dirtyunicorns.utils
 
 # Extra tools
 PRODUCT_PACKAGES += \
