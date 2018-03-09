@@ -187,6 +187,10 @@ function hmm() #hidden
     done |column
 }
 
+xtended_append_hmm "xtendedremote" "Add a git remote for matching xtended repository"
+xtended_append_hmm "aospremote" "Add git remote for matching AOSP repository"
+xtended_append_hmm "cafremote" "Add git remote for matching CodeAurora repository."
+
 function fixup_common_out_dir() {
     common_out_dir=$(get_build_var OUT_DIR)/target/common
     target_device=$(get_build_var TARGET_DEVICE)
@@ -205,7 +209,13 @@ function fixup_common_out_dir() {
     fi
 }
 
-xtended_append_hmm "xtendedremote" "Add a git remote for matching xtended repository"
-xtended_append_hmm "aospremote" "Add git remote for matching AOSP repository"
-xtended_append_hmm "cafremote" "Add git remote for matching CodeAurora repository."
+# Enable SD-LLVM if available
+if [ -d $(gettop)/vendor/qcom/sdclang ]; then
+            export SDCLANG=true
+            export SDCLANG_PATH="vendor/qcom/sdclang/4.0.2/prebuilt/linux-x86_64/bin"
+            export SDCLANG_LTO_DEFS="vendor/qcom/sdclang/sdllvm-lto-defs.mk"
+            export SDCLANG_CONFIG="vendor/qcom/sdclang/sdclang.json"
+            export SDCLANG_AE_CONFIG="vendor/qcom/sdclang/sdclangAE.json"
+fi
+
 
