@@ -8,7 +8,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase=$(PRODUCT_GMS_CLIENTID_BASE)
 endif
 
-
 ifneq ($(TARGET_BUILD_VARIANT),user)
 # Thank you, please drive thru!
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.sys.dun.override=0
@@ -45,7 +44,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.wfd.virtual=0 \
     ro.build.selinux=1 \
     persist.sys.dun.override=0 \
-    ro.com.google.ime.theme_id=5
+    ro.com.google.ime.theme_id=5 \
+    persist.debug.wfd.enable=1 \
+    persist.sys.wfd.virtual=0
 
 # Bootanimation
 TARGET_BOOTANIMATION_480P := $(shell \
