@@ -1,4 +1,3 @@
-#
 # Copyright (C) 2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,18 +11,11 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xtended_arm.mk \
-    $(LOCAL_DIR)/xtended_arm64.mk \
-    $(LOCAL_DIR)/xtended_x86.mk \
-    $(LOCAL_DIR)/xtended_x86_64.mk
+$(call inherit-product, build/target/product/aosp_x86_64.mk)
+$(call inherit-product, vendor/xtended/config/common.mk)
 
-########################
-include $(CLEAR_VARS)
-LOCAL_MODULE := privapp-permissions-turbo.xml
-LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_PATH := $(TARGET_OUT_ETC)/permissions
-LOCAL_SRC_FILES := $(LOCAL_MODULE)
-include $(BUILD_PREBUILT)
+# Allow building otatools
+TARGET_FORCE_OTA_PACKAGE := true
+
+PRODUCT_NAME := xtended_x86_64
