@@ -92,7 +92,8 @@ PRODUCT_PACKAGES += \
     Calculator \
     LatinIME \
     BluetoothExt \
-    OmniJaws
+    OmniJaws \
+    OmniStyle
 
 # Xtended Packages
 PRODUCT_PACKAGES += \
