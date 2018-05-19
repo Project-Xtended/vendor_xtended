@@ -97,7 +97,6 @@ PRODUCT_PACKAGES += \
 
 # Xtended Packages
 PRODUCT_PACKAGES += \
-    Xtended \
     Camera
 
 # DU Utils Library
