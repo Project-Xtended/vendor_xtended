@@ -38,8 +38,14 @@ PRODUCT_COPY_FILES += \
     vendor/xtended/prebuilt/common/etc/init.local.rc:root/init.xtended.rc
 
 # Copy LatinIME for gesture typing
+ifeq ($(TARGET_ARCH),arm64)
+PRODUCT_COPY_FILES += \
+    vendor/xtended/prebuilt/common/lib64/libjni_latinimegoogle.so:system/lib64/libjni_latinimegoogle.so \
+    vendor/xtended/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
+else
 PRODUCT_COPY_FILES += \
     vendor/xtended/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
+endif
 
 # SELinux filesystem labels
 PRODUCT_COPY_FILES += \
