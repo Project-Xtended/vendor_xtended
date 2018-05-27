@@ -23,4 +23,9 @@
     <color name="accent_device_default_light">#FF448AFF</color>
     <color name="accent_device_default_dark">#FF448AFF</color>
 
+    <!-- Generic colors -->
+    <color name="generic_theme_primary">#FF448AFF</color>
+    <color name="generic_theme_primary_dark">#FF366ECC</color>
+    <color name="generic_theme_accent">#FF3D7CE5</color>
+
 </resources>
