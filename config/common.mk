@@ -172,31 +172,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.storage_manager.enabled=true
 
-# Color Accents
-PRODUCT_PACKAGES += \
-    PixelTheme \
-    AmberAccent \
-    BlackAccent \
-    BlueAccent \
-    BlueGreyAccent \
-    BrownAccent \
-    CyanAccent \
-    DeepOrangeAccent \
-    DeepPurpleAccent \
-    GreenAccent \
-    GreyAccent \
-    IndigoAccent \
-    LightBlueAccent \
-    LightGreenAccent \
-    LimeAccent \
-    OrangeAccent \
-    PinkAccent \
-    PurpleAccent \
-    RedAccent \
-    TealAccent \
-    YellowAccent \
-    WhiteAccent
-
 # easy way to extend to add more packages
 -include vendor/extra/product.mk
 
