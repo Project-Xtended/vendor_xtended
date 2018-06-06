@@ -103,6 +103,7 @@ PRODUCT_PACKAGES += \
 
 # Xtended Packages
 PRODUCT_PACKAGES += \
+    Ruthless \
     Camera
 
 # DU Utils Library
