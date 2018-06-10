@@ -25,3 +25,8 @@ PRODUCT_PACKAGES += \
     YellowAccent \
     WhiteAccent
 
+# Analog clocks
+PRODUCT_PACKAGES += \
+    AnalogDeadpool \
+    AnalogDu
+

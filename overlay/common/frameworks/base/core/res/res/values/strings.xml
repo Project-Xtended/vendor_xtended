@@ -15,12 +15,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- When true enable gesture setting. -->
-    <bool name="config_gesture_settings_enabled">false</bool>
-
-    <!-- If the Storage Manager settings are enabled. -->
-    <bool name="config_storage_manager_settings_enabled">true</bool>
-
-    <string name="lockscreen_clock_selection_analog_deadpool">Analog (deadpool)</string>
-    <string name="lockscreen_clock_selection_analog_du">Analog DU</string>
+    <string name="custom_clock_styles" translatable="false">
+        digital,digital_bold,sammy,sammy_bold,analog,com.analog.clocks.deadpool,com.analog.clocks.du
+    </string>
 </resources>
