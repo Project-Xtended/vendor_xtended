@@ -29,5 +29,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AnalogDeadpool \
     AnalogDu \
-    AnalogMSMX
+    AnalogMSMX \
+    AnalogDeepNight
 
