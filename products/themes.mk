@@ -28,5 +28,6 @@ PRODUCT_PACKAGES += \
 # Analog clocks
 PRODUCT_PACKAGES += \
     AnalogDeadpool \
-    AnalogDu
+    AnalogDu \
+    AnalogMSMX
 
