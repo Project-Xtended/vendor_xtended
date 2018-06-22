@@ -140,7 +140,8 @@ PRODUCT_COPY_FILES += \
     vendor/xtended/prebuilt/fonts/roadrage/road_rage.ttf:system/fonts/RoadRage-Regular.ttf \
     vendor/xtended/prebuilt/fonts/neoneon/neoneon.ttf:system/fonts/Neoneon-Regular.ttf \
     vendor/xtended/prebuilt/fonts/snowstorm/snowstorm.ttf:system/fonts/Snowstorm-Regular.ttf \
-    vendor/xtended/prebuilt/fonts/vcrosd/vcr_osd_mono.ttf:system/fonts/ThemeableFont-Regular.ttf
+    vendor/xtended/prebuilt/fonts/vcrosd/vcr_osd_mono.ttf:system/fonts/ThemeableFont-Regular.ttf \
+    vendor/xtended/prebuilt/fonts/Shamshung/Shamshung.ttf:system/fonts/Shamshung.ttf
 
 PRODUCT_PACKAGES += \
     charger_res_images
