@@ -31,5 +31,6 @@ PRODUCT_PACKAGES += \
     AnalogDu \
     AnalogMSMX \
     AnalogDeepNight \
-    AnalogSimple
+    AnalogSimple \
+    AnalogAvengers
 

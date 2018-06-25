@@ -26,4 +26,5 @@
     <string name="lockscreen_clock_selection_analog_msmx">Analog Xtended</string>
     <string name="lockscreen_clock_selection_analog_deepnight">Analog (deep night)</string>
     <string name="lockscreen_clock_selection_analog_simple">Simple Analog</string>
+    <string name="lockscreen_clock_selection_analog_avengers">Analog Avengers</string>
 </resources>
