@@ -115,8 +115,7 @@ PRODUCT_PACKAGES += \
 
 # Xtended Packages
 PRODUCT_PACKAGES += \
-    Ruthless \
-    Camera
+    Ruthless
 
 # DU Utils Library
 PRODUCT_BOOT_JARS += \
