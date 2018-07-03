@@ -115,7 +115,7 @@ PRODUCT_PACKAGES += \
 
 # Xtended Packages
 PRODUCT_PACKAGES += \
-    Ruthless
+    LeanLauncher
 
 # DU Utils Library
 PRODUCT_BOOT_JARS += \
