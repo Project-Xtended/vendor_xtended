@@ -42,6 +42,13 @@ PRODUCT_COPY_FILES += \
     vendor/xtended/prebuilt/common/bin/50-xtended.sh:system/addon.d/50-xtended.sh \
     vendor/xtended/prebuilt/common/bin/clean_cache.sh:system/bin/clean_cache.sh
 
+ifeq ($(AB_OTA_UPDATER),true)
+PRODUCT_COPY_FILES += \
+    vendor/xtended/prebuilt/common/bin/backuptool_ab.sh:system/bin/backuptool_ab.sh \
+    vendor/xtended/prebuilt/common/bin/backuptool_ab.functions:system/bin/backuptool_ab.functions \
+    vendor/xtended/prebuilt/common/bin/backuptool_postinstall.sh:system/bin/backuptool_postinstall.sh
+endif
+
 # Backup services whitelist
 PRODUCT_COPY_FILES += \
     vendor/xtended/config/permissions/backup.xml:system/etc/sysconfig/backup.xml
