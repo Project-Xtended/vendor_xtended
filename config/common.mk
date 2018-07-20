@@ -151,7 +151,10 @@ PRODUCT_PACKAGES += \
     fsck.exfat \
     mkfs.exfat \
     ntfsfix \
-    ntfs-3g
+    ntfs-3g \
+    mkfs.ntfs \
+    fsck.ntfs \
+    mount.ntfs
 
 # Xtended Stuff - Copy to System fonts
 PRODUCT_COPY_FILES += \
