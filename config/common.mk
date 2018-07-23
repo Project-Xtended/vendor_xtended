@@ -154,7 +154,30 @@ PRODUCT_PACKAGES += \
     ntfs-3g \
     mkfs.ntfs \
     fsck.ntfs \
-    mount.ntfs
+    mount.ntfs \
+    mkfs.f2fs \
+    fsck.f2fs \
+    fibmap.f2fs \
+    libsepol \
+    nano \
+    htop \
+    gdbserver \
+    micro_bench \
+    oprofiled \
+    sqlite3 \
+    strace \
+    pigz \
+    7z \
+    lib7z \
+    bash \
+    bzip2 \
+    curl \
+    powertop \
+    unrar \
+    unzip \
+    vim \
+    wget \
+    zip
 
 # Xtended Stuff - Copy to System fonts
 PRODUCT_COPY_FILES += \
