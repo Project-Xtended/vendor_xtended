@@ -8,11 +8,33 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase=$(PRODUCT_GMS_CLIENTID_BASE)
 endif
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    keyguard.no_require_sim=true
+# Set cache location
+ifeq ($(BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE),)
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.device.cache_dir=/data/cache
+else
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.device.cache_dir=/cache
+endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.selinux=1
+    keyguard.no_require_sim=true \
+    ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
+    ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
+    ro.com.android.wifi-watchlist=GoogleGuest \
+    ro.setupwizard.require_network=any \
+    ro.setupwizard.mode=OPTIONAL \
+    ro.com.android.dateformat=MM-dd-yyyy \
+    ro.com.android.dataroaming=false \
+    ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent \
+    ro.setupwizard.rotation_locked=true \
+    ro.opa.eligible_device=true\
+    persist.sys.wfd.nohdcp=1 \
+    persist.debug.wfd.enable=1 \
+    persist.sys.wfd.virtual=0 \
+    ro.build.selinux=1 \
+    persist.sys.dun.override=0 \
+    ro.com.google.ime.theme_id=5
 
 # Bootanimation
 TARGET_BOOTANIMATION_480P := $(shell \
