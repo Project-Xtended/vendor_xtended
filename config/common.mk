@@ -8,7 +8,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase=$(PRODUCT_GMS_CLIENTID_BASE)
 endif
 
-
 ifneq ($(TARGET_BUILD_VARIANT),user)
 # Thank you, please drive thru!
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.sys.dun.override=0
@@ -39,7 +38,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dataroaming=false \
     ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent \
     ro.setupwizard.rotation_locked=true \
-    ro.opa.eligible_device=true\
+    ro.opa.eligible_device=true \
     persist.sys.wfd.nohdcp=1 \
     persist.debug.wfd.enable=1 \
     persist.sys.wfd.virtual=0 \
@@ -232,6 +231,10 @@ PRODUCT_PACKAGES += \
 # Storage manager
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.storage_manager.enabled=true
+
+# Media
+PRODUCT_PROPERTY_OVERRIDES += \
+    media.recorder.show_manufacturer_and_model=true
 
 # easy way to extend to add more packages
 -include vendor/extra/product.mk
