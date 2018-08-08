@@ -248,7 +248,7 @@ $(call inherit-product-if-exists, vendor/xtended/products/themes.mk)
 # Versioning System
 # Xtended first version.
 PRODUCT_VERSION_MAJOR = 8.1
-PRODUCT_VERSION_MAINTENANCE = x9.5
+PRODUCT_VERSION_MAINTENANCE = x10
 XTENDED_POSTFIX := $(shell date +"%Y%m%d")
 XTENDED_BUILD_EXTRA := By-Team-Xtended
 ifndef XTENDED_BUILD_TYPE
