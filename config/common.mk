@@ -156,23 +156,23 @@ PRODUCT_PACKAGES += \
     Calculator \
     LatinIME \
     BluetoothExt \
-    OmniJaws \
-    OmniStyle
+#    OmniJaws \
+#    OmniStyle
 
 # Xtended Packages
 PRODUCT_PACKAGES += \
     LeanLauncher
 
 # DU Utils Library
-PRODUCT_BOOT_JARS += \
+#PRODUCT_BOOT_JARS += \
     org.dirtyunicorns.utils
 
 # DU Utils Library
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     org.dirtyunicorns.utils
 
 # Fonts
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     DU-Fonts
 
 # Extra tools
@@ -243,7 +243,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGE_OVERLAYS += vendor/xtended/overlay/common
 
 # Themes
-$(call inherit-product-if-exists, vendor/xtended/products/themes.mk)
+#$(call inherit-product-if-exists, vendor/xtended/products/themes.mk)
 
 # Versioning System
 # Xtended first version.

@@ -28,7 +28,7 @@
         <item>20</item>
     </integer-array>
 
-    <!-- Lockscreen clock styles -->
+    <!-- Lockscreen clock styles 
     <string-array name="lockscreen_clock_selection_entries" translatable="false">
         <item>@string/lockscreen_clock_selection_digital</item>
         <item>@string/lockscreen_clock_selection_digital_bold</item>
@@ -55,5 +55,5 @@
 	<item>8</item>
 	<item>9</item>
 	<item>10</item>
-    </string-array>
+    </string-array>-->
 </resources>
