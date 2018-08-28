@@ -15,6 +15,7 @@ $(call add_json_bool, Uses_qcom_bsp_legacy,                 $(filter true,$(TARG
 $(call add_json_bool, Uses_qti_camera_device,               $(filter true,$(TARGET_USES_QTI_CAMERA_DEVICE)))
 $(call add_json_bool, Device_support_hwfde, $(filter true,$(TARGET_HW_DISK_ENCRYPTION)))
 $(call add_json_bool, Device_support_hwfde_perf, $(filter true,$(TARGET_HW_DISK_ENCRYPTION_PERF)))
+$(call add_json_bool, Device_support_legacy_hwfde, $(filter true,$(TARGET_LEGACY_HW_DISK_ENCRYPTION)))
 $(call add_json_str_omitempty, Target_process_sdk_version_override, $(TARGET_PROCESS_SDK_VERSION_OVERRIDE))
 
 # This causes the build system to strip out the last comma in our nested struct, to keep the JSON valid.
