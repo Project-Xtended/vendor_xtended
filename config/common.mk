@@ -267,7 +267,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.xtended.version=$(XTENDED_XTRA_VERSION) \
     ro.modversion=$(XTENDED_MOD_VERSION) \
     ro.xtended.buildtype=$(XTENDED_BUILD_TYPE) \
-    ro.xtended.display.version=$(XTENDED_DISPLAY_VERSION)
+    ro.xtended.display.version=$(XTENDED_DISPLAY_VERSION) \
+    com.xtended.fingerprint=$(XTENDED_XTRA_VERSION)
 
 # Google sounds
 include vendor/xtended/google/GoogleAudio.mk
