@@ -11,7 +11,7 @@ touch $Changelog
 
 echo "Generating changelog..."
 
-for i in $(seq 7);
+for i in $(seq 14);
 do
 export After_Date=`date --date="$i days ago" +%F`
 k=$(expr $i - 1)
