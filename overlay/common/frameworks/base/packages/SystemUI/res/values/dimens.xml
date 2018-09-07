@@ -19,4 +19,32 @@
     <!-- A majority of devices don't have rounded corners
          so theres no need to pad the content -->
     <dimen name="rounded_corner_content_padding">-2dp</dimen>
+
+    <!-- The height of the quick settings footer that holds the user switcher, settings icon,
+    etc. -->
+    <!-- 56dp -->
+    <dimen name="qs_footer_height">48dp</dimen>
+
+    <!-- End padding for left-aligned status bar clock -->
+    <!-- 7dp -->
+    <dimen name="status_bar_left_clock_end_padding">0dp</dimen>
+
+    <!-- 18dp -->
+    <dimen name="qs_tile_margin_top">10dp</dimen>
+
+    <!-- 30dp -->
+    <dimen name="qs_panel_padding_top">20dp</dimen>
+
+    <!-- 106dp -->
+    <dimen name="qs_tile_height">96dp</dimen>
+
+    <!-- 24dp -->
+    <dimen name="qs_tile_margin_vertical">16dp</dimen>
+
+    <!-- 24dp -->
+    <dimen name="qs_paged_tile_layout_padding_bottom">14dp</dimen>
+
+    <!-- 48dp -->
+    <dimen name="qs_brightness_slider_height">40dp</dimen>
+
 </resources>
