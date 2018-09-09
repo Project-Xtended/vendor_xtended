@@ -5,7 +5,7 @@
 
 export S=/system
 export C=/postinstall/tmp/backupdir
-export V=8.1.0
+export V=9.0
 
 export ADDOND_VERSION=2
 
@@ -50,7 +50,7 @@ if [ ! -r /system/build.prop ]; then
     return 0
 fi
 
-grep -q "^ro.gzosp.version=$V.*" /system/etc/prop.default /system/build.prop && return 1
+grep -q "^ro.xtended.version=$V.*" /system/build.prop && return 1
 
 echo "Not backing up files from incompatible version: $V"
 return 0
@@ -136,3 +136,4 @@ case "$1" in
 esac
 
 exit 0
+
