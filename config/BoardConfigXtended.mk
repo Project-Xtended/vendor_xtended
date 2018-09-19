@@ -4,3 +4,5 @@
 #endif
 
 include vendor/xtended/config/BoardConfigKernel.mk
+
+include vendor/xtended/config/BoardConfigSoong.mk
