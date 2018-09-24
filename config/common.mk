@@ -151,12 +151,6 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 # Disable vendor restrictions
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
-#Xtended OTA Support
-ifeq ($(XTENDED_BUILD_TYPE), OFFICIAL)
-PRODUCT_PACKAGES += \
-    Updater
-endif
-
 # Xtended packages
 PRODUCT_PACKAGES += \
     VinylMusicPlayer \
