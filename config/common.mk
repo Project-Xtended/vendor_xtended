@@ -198,6 +198,10 @@ PRODUCT_PACKAGES += \
     PrimaryWarmWhite \
     PrimaryDarkBlue
 
+# CustomDoze
+PRODUCT_PACKAGES += \
+    CustomDoze
+
 # DU Utils Library
 #PRODUCT_BOOT_JARS += \
     org.dirtyunicorns.utils
