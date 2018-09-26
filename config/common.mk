@@ -118,6 +118,10 @@ PRODUCT_COPY_FILES += \
     vendor/xtended/prebuilt/common/etc/mkshrc:system/etc/mkshrc \
     vendor/xtended/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf
 
+# whitelist packages for location providers not in system
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.services.whitelist.packagelist=com.google.android.gms
+
 # Fix Dialer
 PRODUCT_COPY_FILES +=  \
 #    vendor/xtended/prebuilt/common/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml
