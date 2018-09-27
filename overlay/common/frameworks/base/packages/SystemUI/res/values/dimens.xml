@@ -47,4 +47,13 @@
     <!-- 48dp -->
     <dimen name="qs_brightness_slider_height">40dp</dimen>
 
+    <!-- 0dp -->
+    <dimen name="qs_header_tile_margin_horizontal">13dp</dimen>
+
+    <!-- power menu + volume dialog -->
+    <!-- 8dp -->
+    <!-- ALWAYS set to same as config_dialogCornerRadius -->
+    <dimen name="corner_size">10dp</dimen>
+    <dimen name="edge_margin">10dp</dimen>
+
 </resources>
