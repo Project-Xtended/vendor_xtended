@@ -24,6 +24,9 @@ type Product_variables struct {
 	Uses_qcom_bsp_legacy struct {
 		Cppflags []string
 	}
+	Target_process_sdk_version_override struct {
+		Cppflags []string
+	}
 }
 
 type ProductVariables struct {
@@ -35,4 +38,5 @@ type ProductVariables struct {
 	Uses_generic_camera_parameter_library  *bool `json:",omitempty"`
 	Uses_qti_camera_device  *bool `json:",omitempty"`
 	Uses_qcom_bsp_legacy  *bool `json:",omitempty"`
+	Target_process_sdk_version_override *string `json:",omitempty"`
 }
