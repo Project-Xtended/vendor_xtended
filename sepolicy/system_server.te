@@ -1,2 +1,0 @@
-allow system_server pocket_service:service_manager { add find };
-allow system_server media_rw_data_file:file r_file_perms;
