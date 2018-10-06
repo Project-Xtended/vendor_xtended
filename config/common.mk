@@ -178,6 +178,7 @@ PRODUCT_PACKAGES += \
     TelecommTheme
 
 PRODUCT_PACKAGES += \
+    NotificationsXtended \
     NotificationsDark \
     NotificationsLight \
     NotificationsPrimary
@@ -200,6 +201,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     PrimaryAlmostBlack \
     PrimaryBlack \
+    PrimaryXtended \
     PrimaryOmni \
     PrimaryWhite \
     PrimaryColdWhite \
