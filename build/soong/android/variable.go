@@ -6,6 +6,9 @@ type Product_variables struct {
 	Apply_msm8974_1440p_egl_workaround struct {
 		Cflags []string
 	}
+	Bootloader_message_offset struct {
+		Cflags []string
+	}
 	Should_skip_waiting_for_qsee struct {
 		Cflags []string
 	}
@@ -76,6 +79,7 @@ type ProductVariables struct {
 	Device_support_hwfde  *bool `json:",omitempty"`
 	Device_support_hwfde_perf  *bool `json:",omitempty"`
 	Device_support_wait_for_qsee  *bool `json:",omitempty"`
+	Bootloader_message_offset  *int `json:",omitempty"`
 	Has_legacy_camera_hal1  *bool `json:",omitempty"`
 	Needs_legacy_camera_hal1_dyn_native_handle  *bool `json:",omitempty"`
 	Uses_media_extensions   *bool `json:",omitempty"`
