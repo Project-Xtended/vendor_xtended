@@ -8,5 +8,5 @@
 
 
     <application android:hasCode="false"
-                 android:label="Pitch Black" />
+                 android:label="Almost Black" />
 </manifest>
