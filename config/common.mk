@@ -179,6 +179,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     NotificationsXtended \
+    NotificationsBlack \
     NotificationsDark \
     NotificationsLight \
     NotificationsPrimary
