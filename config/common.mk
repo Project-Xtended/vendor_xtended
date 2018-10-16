@@ -189,6 +189,7 @@ PRODUCT_PACKAGES += \
     AccentPixel \
     AccentGoldenShower \
     AccentDeepOrange \
+    AccentMisticBrown \
     AccentOmni \
     AccentWhite \
     AccentTeal \
