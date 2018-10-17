@@ -165,6 +165,13 @@ PRODUCT_PACKAGES += \
     OmniJaws \
     OmniStyle
 
+# QS tile styles
+PRODUCT_PACKAGES += \
+    QStileCircleTrim \
+    QStileDefault \
+    QStileDualToneCircle \
+    QStileSquircleTrim
+
 # Omni Poor Man Themes
 PRODUCT_PACKAGES += \
     DocumentsUITheme \
