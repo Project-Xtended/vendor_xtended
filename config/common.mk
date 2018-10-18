@@ -140,9 +140,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver \
     Development \
-    SpareParts \
-    LockClock \
-    su
+    SpareParts
 
 # Optional packages
 PRODUCT_PACKAGES += \
@@ -166,10 +164,6 @@ PRODUCT_PACKAGES += \
     BluetoothExt \
     OmniJaws \
     OmniStyle
-
-# Xtended Packages
-PRODUCT_PACKAGES += \
-    LeanLauncher
 
 # Omni Poor Man Themes
 PRODUCT_PACKAGES += \
@@ -218,18 +212,6 @@ PRODUCT_PACKAGES += \
 
 # Build OTA for Official Only
 PRODUCT_PACKAGES += XOta
-
-# DU Utils Library
-#PRODUCT_BOOT_JARS += \
-    org.dirtyunicorns.utils
-
-# DU Utils Library
-#PRODUCT_PACKAGES += \
-    org.dirtyunicorns.utils
-
-# Fonts
-#PRODUCT_PACKAGES += \
-    DU-Fonts
 
 # Extra tools
 PRODUCT_PACKAGES += \
