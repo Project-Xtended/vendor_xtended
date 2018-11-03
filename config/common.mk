@@ -72,7 +72,11 @@ endif
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.debug.alloc=0
 
-# Backup tool
+# Ambient Play
+PRODUCT_PACKAGES += \
+    AmbientPlayHistoryProvider
+
+# Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/xtended/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
     vendor/xtended/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
