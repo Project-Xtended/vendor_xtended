@@ -215,7 +215,8 @@ PRODUCT_PACKAGES += \
 
 # CustomDoze
 PRODUCT_PACKAGES += \
-    CustomDoze
+    CustomDoze \
+    SubstratumSignature
 
 # Build OTA for Official Only
 PRODUCT_PACKAGES += XOta
