@@ -222,8 +222,7 @@ PRODUCT_PACKAGES += \
 
 # CustomDoze
 PRODUCT_PACKAGES += \
-    CustomDoze \
-    SubstratumSignature
+    CustomDoze
 
 # Build OTA for Official Only
 PRODUCT_PACKAGES += XOta
@@ -294,6 +293,10 @@ PRODUCT_PACKAGES += \
     SettingsDarkThemeOverlay
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/xtended/overlay/common
+
+# SubstratumSignature Package
+PRODUCT_COPY_FILES += \
+     vendor/xtended/prebuilt/common/app/SubstratumSignature.apk:system/priv-app/SubstratumSignature/SubstratumSignature.apk
 
 # Themes
 #$(call inherit-product-if-exists, vendor/xtended/products/themes.mk)
