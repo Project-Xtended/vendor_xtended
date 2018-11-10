@@ -172,7 +172,7 @@ PRODUCT_PACKAGES += \
     QStileDualToneCircle \
     QStileSquircleTrim \
     QStileAttemptMountain \
-    QStileCircleDualTone \
+    QStileCircleDual \
     QStileCircleGradient \
     QStileDottedCircle \
     QStileNinja \
