@@ -177,7 +177,8 @@ PRODUCT_PACKAGES += \
     QStileDottedCircle \
     QStileNinja \
     QStilePokesign \
-    QStileWavey
+    QStileWavey \
+    QStileSquaremedo
 
 # Omni's PoorMan Themes
 PRODUCT_PACKAGES += \
