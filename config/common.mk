@@ -295,6 +295,10 @@ PRODUCT_COPY_FILES += \
     vendor/xtended/prebuilt/fonts/vcrosd/vcr_osd_mono.ttf:system/fonts/ThemeableFont-Regular.ttf \
     vendor/xtended/prebuilt/fonts/Shamshung/Shamshung.ttf:system/fonts/Shamshung.ttf
 
+# DU Font Engine
+PRODUCT_PACKAGES += \
+   DU-Fonts
+
 PRODUCT_PACKAGES += \
     charger_res_images
 
