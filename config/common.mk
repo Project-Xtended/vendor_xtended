@@ -157,9 +157,14 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
     librsjni
 
-# AudioFX
+# JamesDSP
 PRODUCT_PACKAGES += \
-    AudioFX
+   libjamesdsp
+
+# MusicFX
+PRODUCT_PACKAGES += \
+    Eleven \
+    MusicFX
 
 # Extra Optional packages
 PRODUCT_PACKAGES += \
