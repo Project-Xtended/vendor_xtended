@@ -169,6 +169,7 @@ PRODUCT_PACKAGES += \
 
 # MusicFX
 PRODUCT_PACKAGES += \
+    Recorder \
     Eleven \
     MusicFX
 
