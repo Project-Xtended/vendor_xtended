@@ -16,13 +16,6 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
            xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Use the non-light style so that the up button & icons aren't black. If we use the
-         Light style, then it is impossible to tint the homeAsUp icon anything other than black -->
-    <style name="ContactsActionBarStyle" parent="@android:style/Widget.Material.ActionBar">
-        <item name="android:background">@*android:color/omni_color5</item>
-        <item name="android:backgroundStacked">@*android:color/omni_color5</item>
-    </style>
-
     <style name="NonPhoneDialogTheme" parent="@*android:Theme.DeviceDefault.Dialog">
         <!-- Color palette -->
         <item name="android:colorPrimary">@*android:color/omni_color2</item>
@@ -127,3 +120,4 @@
 
 
 </resources>
+

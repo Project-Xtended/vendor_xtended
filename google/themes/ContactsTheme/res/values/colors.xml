@@ -25,14 +25,10 @@
     <!-- 38% black -->
     <color name="quantum_black_hint_text">@*android:color/omni_text_tertiary</color>
 
-    <color name="quickcontact_entry_sub_header_text_color">#a3a3a3</color>
-    <color name="quickcontact_entry_header_text_color">#f0f0f0</color>
+    <color name="quickcontact_entry_sub_header_text_color">@*android:color/omni_text2</color>
+    <color name="quickcontact_entry_header_text_color">@*android:color/omni_text1</color>
 
     <color name="action_bar_background">@*android:color/omni_color5</color>
-
-    <color name="nav_item_selected_background">#000000</color> <!-- 000000-->
-
-    <color name="action_bar_button_text_color">@*android:color/omni_text1</color>
 
     <color name="actionbar_background_color">@*android:color/omni_color5</color>
 
@@ -52,7 +48,7 @@
     <color name="floating_action_button_icon_color">@*android:color/omni_color2</color>
 
     <!-- Horizontal separator line should be 12% dark in the light theme. -->
-    <color name="divider_line_color_light">#202020</color>
+    <color name="divider_line_color_light">#80808080</color>
 
     <!-- Color of the text on an ExpandingEntryCard button -->
     <color name="expanding_entry_card_button_text_color">@*android:color/omni_text1</color>
@@ -63,26 +59,14 @@
     <!-- Color of the margin for cards -->
     <color name="card_margin_color">@*android:color/omni_color1</color>
 
-    <color name="call_arrow_green">#2aad6f</color>
-    <color name="call_arrow_red">#ff2e58</color>
-
     <!-- Background color of pinned header items. -->
     <color name="list_item_pinned_header_color">@*android:color/omni_color1</color>
 
-    <!-- Color of the mime-type icons inside the editor. 50% black. -->
-    <color name="editor_icon_color">#7f7f7f</color>
-
     <!-- Color of disabled text and unfocused hint text inside the contact editor. 25% black. -->
-    <color name="editor_disabled_text_color">#40ffffff</color>
-
-    <!-- Color of text on disabled link contacts button, 25% black. -->
-    <color name="disabled_button_text">#40ffffff</color>
-
-    <!-- Color of background of disabled link contacts button, 15% black. -->
-    <color name="disabled_button_background">#26ffffff</color>
+    <color name="editor_disabled_text_color">@*android:color/omni_text3</color>
 
     <!-- Color of text of people names in contact list when item is disabled. 30% black -->
-    <color name="disabled_contact_list_name_text">#4Dffffff</color>
+    <color name="disabled_contact_list_name_text">@*android:color/omni_text3</color>
 
     <!-- Color of background of all empty states. -->
     <color name="empty_state_background">@*android:color/omni_color1</color>
@@ -171,26 +155,8 @@
             this is Blue Grey 700 -->
     <color name="quickcontact_default_photo_tint_color_dark">@*android:color/omni_color2</color>
 
-
-    <color name="letter_tile_default_color">#333333</color>
-
-    <color name="letter_tile_font_color">#000000</color>
-
-    <!-- Color for icons in the actionbar -->
-    <color name="actionbar_icon_color">@*android:color/omni_text1</color>
-
     <!-- Color of the title to the Frequently Contacted section -->
     <color name="frequently_contacted_title_color">@*android:color/omni_color5</color>
-
-    <!-- Color of action bar text. Ensure this stays in sync with packages/Telephony
-    phone_settings_actionbar_text_color-->
-    <color name="actionbar_text_color">@*android:color/omni_text_primary</color>
-    <!-- 54% black for icons -->
-    <color name="actionbar_icon_color_grey">#8Cffffff</color>
-    <!-- 87% black for actionbar text -->
-    <color name="actionbar_text_color_black">@*android:color/omni_text_secondary</color>
-    <!-- Solid grey for status bar overlay-->
-    <color name="actionbar_color_grey_solid">#777777</color>
 
     <!-- Text color of the search box text as entered by user  -->
     <color name="searchbox_text_color">@*android:color/omni_text_primary</color>
@@ -239,7 +205,7 @@
     <color name="alert_background">@*android:color/omni_color7</color>
 
     <!-- Divider color in navigation drawer -->
-    <color name="drawer_divider_color">@*android:color/omni_color6</color>
+    <color name="drawer_divider_color">@*android:color/omni_color2</color>
 
     <!-- Background color for the navigation drawer -->
     <color name="navigation_drawer_background_color">@*android:color/omni_color2</color>
@@ -256,3 +222,4 @@
     <color name="ripple_material_dark">@*android:color/omni_color3</color>
 
 </resources>
+
