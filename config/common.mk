@@ -178,6 +178,11 @@ PRODUCT_PACKAGES += \
     OmniJaws \
     OmniStyle
 
+# Cutout control overlays
+PRODUCT_PACKAGES += \
+    HideCutout \
+    StatusBarStock
+
 # QS tile styles
 PRODUCT_PACKAGES += \
     QStileCircleTrim \
