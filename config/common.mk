@@ -54,7 +54,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.debug.wfd.enable=1 \
     persist.sys.wfd.virtual=0
 
-PRODUCT_PROPERTY_OVERRIDES += \
+# whitelist packages for location providers not in system
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.services.whitelist.packagelist=com.google.android.gms
 
 # Bootanimation
