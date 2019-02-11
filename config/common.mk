@@ -146,6 +146,7 @@ PRODUCT_COPY_FILES += \
 # Required packages
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver \
+    GboardGoPreb \
     Development \
     SpareParts
 
@@ -173,7 +174,6 @@ PRODUCT_PACKAGES += \
 # Extra Optional packages
 PRODUCT_PACKAGES += \
     Calculator \
-    LatinIME \
     BluetoothExt \
     OmniJaws \
     OmniStyle
@@ -402,6 +402,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Google sounds
 include vendor/xtended/google/GoogleAudio.mk
+
+# Some props that we need for the google stuff we're adding
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.com.google.ime.height_ratio=1.05 \
+    ro.com.google.ime.emoji_key=false
 
 EXTENDED_POST_PROCESS_PROPS := vendor/xtended/tools/xtended_process_props.py
 
