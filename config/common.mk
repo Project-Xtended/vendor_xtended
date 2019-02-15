@@ -200,7 +200,8 @@ PRODUCT_PACKAGES += \
     QStileSquaremedo \
     QStileOreo \
     QStileOreoCircleTrim \
-    QStileOreoSquircleTrim
+    QStileOreoSquircleTrim \
+    QStilesCircleOutline 
 
 # Omni's PoorMan Themes
 PRODUCT_PACKAGES += \
