@@ -94,7 +94,10 @@
     <!--  Maximum number of supported users -->
     <integer name="config_multiuserMaximumUsers">4</integer>
 
-	<!-- Whether WiFi display is supported by this device.
+    <!-- Misc -->
+    <string name="config_recentsComponentName" translatable="false">ch.deletescape.lawnchair.ci/com.android.quickstep.RecentsActivity</string>
+
+    <!-- Whether WiFi display is supported by this device.
          There are many prerequisites for this feature to work correctly.
          Here are a few of them:
          * The WiFi radio must support WiFi P2P.

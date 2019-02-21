@@ -106,15 +106,15 @@ PRODUCT_COPY_FILES += \
     vendor/xtended/prebuilt/common/etc/init.local.rc:root/init.xtended.rc
 
 # Copy LatinIME for gesture typing
-ifeq ($(TARGET_ARCH),arm64)
-PRODUCT_COPY_FILES += \
+#ifeq ($(TARGET_ARCH),arm64)
+#PRODUCT_COPY_FILES += \
     vendor/xtended/prebuilt/common/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so \
     vendor/xtended/prebuilt/common/lib64/libjni_latinimegoogle.so:system/lib64/libjni_latinimegoogle.so
-else
-PRODUCT_COPY_FILES += \
+#else
+#PRODUCT_COPY_FILES += \
     vendor/xtended/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so \
     vendor/xtended/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
-endif
+#endif
 
 # SELinux filesystem labels
 PRODUCT_COPY_FILES += \
@@ -176,7 +176,13 @@ PRODUCT_PACKAGES += \
     Calculator \
     BluetoothExt \
     OmniJaws \
-    OmniStyle
+    OmniStyle \
+    Lawnchair
+
+# Lawnchair
+PRODUCT_COPY_FILES += \
+    vendor/xtended/prebuilt/common/etc/permissions/privapp-permissions-lawnchair.xml:system/etc/permissions/privapp-permissions-lawnchair.xml \
+    vendor/xtended/prebuilt/common/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml:system/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml
 
 # Cutout control overlays
 PRODUCT_PACKAGES += \
