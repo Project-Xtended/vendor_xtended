@@ -130,8 +130,9 @@ PRODUCT_PACKAGES += \
     GalleryGoPrebuilt \
     SettingsIntelligenceGooglePrebuilt \
     OmniJaws \
+    Lawnchair \
     PixelThemes
-    
+
 # Cutout control overlays
 PRODUCT_PACKAGES += \
     HideCutout \
@@ -178,6 +179,11 @@ PRODUCT_PACKAGES += \
     vim \
     wget \
     zip
+
+# Lawnchair
+PRODUCT_COPY_FILES += \
+    vendor/xtended/prebuilt/common/etc/permissions/privapp-permissions-lawnchair.xml:system/etc/permissions/privapp-permissions-lawnchair.xml \
+    vendor/xtended/prebuilt/common/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml:system/etc/sysconfig/lawnchair-hiddenapi-package-whitelis$
 
 # Xtended Stuff - Copy to System fonts
 PRODUCT_COPY_FILES += \
