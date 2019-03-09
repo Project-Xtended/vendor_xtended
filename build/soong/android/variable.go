@@ -38,9 +38,12 @@ type Product_variables struct {
 	Uses_generic_camera_parameter_library struct {
 		Srcs []string
 	}
-	Uses_qti_camera_device struct {
+        Uses_qti_camera_device struct {
 		Cppflags []string
 		Shared_libs []string
+        }
+	Uses_metadata_as_fde_key struct {
+		Cflags []string
 	}
 	Uses_qcom_bsp_legacy struct {
 		Cppflags []string
