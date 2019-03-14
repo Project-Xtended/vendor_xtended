@@ -79,10 +79,6 @@ endif
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.debug.alloc=0
 
-# Ambient Play
-PRODUCT_PACKAGES += \
-    AmbientPlayHistoryProvider
-
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/xtended/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
@@ -349,6 +345,10 @@ PRODUCT_COPY_FILES += \
 # DU Font Engine
 PRODUCT_PACKAGES += \
    DU-Fonts
+
+# Thermal Control Engine
+PRODUCT_PACKAGES += \
+   ThermalController
 
 PRODUCT_PACKAGES += \
     charger_res_images
