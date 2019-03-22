@@ -340,7 +340,9 @@ PRODUCT_PACKAGES += \
     bash \
     bzip2 \
     curl \
+    getcap \
     powertop \
+    setcap \
     unrar \
     unzip \
     vim \
