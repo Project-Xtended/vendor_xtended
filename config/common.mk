@@ -76,6 +76,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 endif
 endif
 
+# Some Permissions
+PRODUCT_COPY_FILES += \
+    vendor/xtended/config/permissions/privapp-permissions-custom.xml:system/etc/permissions/privapp-permissions-custom.xml
+
 # system mount
 PRODUCT_COPY_FILES += \
     vendor/xtended/build/tools/system-mount.sh:install/bin/system-mount.sh
