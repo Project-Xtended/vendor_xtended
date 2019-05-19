@@ -281,7 +281,8 @@ PRODUCT_PACKAGES += \
     AccentOrangeCoral \
     AccentPureLust \
     AccentQuepal \
-    AccentShadesOfGrey
+    AccentShadesOfGrey \
+    AccentBobBlue
 
 PRODUCT_PACKAGES += \
     PrimaryAlmostBlack \
