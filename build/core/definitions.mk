@@ -7,3 +7,6 @@ endef
 
 # Include QCOM macros
 include vendor/xtended/build/core/qcom_utils.mk
+
+# Include vendor platform definitions
+include vendor/xtended/build/core/vendor/*.mk

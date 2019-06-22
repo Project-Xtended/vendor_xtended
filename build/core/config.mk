@@ -18,4 +18,5 @@ ifneq ($(TARGET_BUILD_VARIANT),userdebug)
 SELINUX_IGNORE_NEVERALLOWS := true
 endif
 
-
+# Rules for QCOM targets
+include $(TOPDIR)vendor/xtended/build/core/qcom_target.mk
