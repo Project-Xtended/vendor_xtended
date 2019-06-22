@@ -1,10 +1,3 @@
-# Bring in Qualcomm helper macros
-include vendor/xtended/build/core/qcom_utils.mk
-
-# Populate the qcom hardware variants in the project pathmap.
-define ril-set-path-variant
-$(call project-set-path-variant,ril,TARGET_RIL_VARIANT,hardware/$(1))
-endef
 define wlan-set-path-variant
 $(call project-set-path-variant,wlan,TARGET_WLAN_VARIANT,hardware/qcom/$(1))
 endef
