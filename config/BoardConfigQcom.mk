@@ -61,23 +61,19 @@ MASTER_SIDE_CP_TARGET_LIST := msm8996 $(UM_4_4_FAMILY) $(UM_4_9_FAMILY) $(UM_4_1
 ifneq ($(filter $(B_FAMILY),$(TARGET_BOARD_PLATFORM)),)
     MSM_VIDC_TARGET_LIST := $(B_FAMILY)
     QCOM_HARDWARE_VARIANT := msm8974
-else ifneq ($(filter $(B64_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+else ifeq ($(call is-board-platform-in-list, $(B64_FAMILY)),true)
     MSM_VIDC_TARGET_LIST := $(B64_FAMILY)
     QCOM_HARDWARE_VARIANT := msm8994
-else ifneq ($(filter $(BR_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+else ifeq ($(call is-board-platform-in-list, $(BR_FAMILY)),true)
     MSM_VIDC_TARGET_LIST := $(BR_FAMILY)
     QCOM_HARDWARE_VARIANT := msm8916
-else ifneq ($(filter $(UM_3_18_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+else ifeq ($(call is-board-platform-in-list, $(UM_3_18_FAMILY)),true)
     MSM_VIDC_TARGET_LIST := $(UM_3_18_FAMILY)
     QCOM_HARDWARE_VARIANT := msm8996
-    TARGET_USES_QCOM_UM_FAMILY := true
-    TARGET_USES_QCOM_UM_3_18_FAMILY := true
-else ifneq ($(filter $(UM_4_4_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+else ifeq ($(call is-board-platform-in-list, $(UM_4_4_FAMILY)),true)
     MSM_VIDC_TARGET_LIST := $(UM_4_4_FAMILY)
     QCOM_HARDWARE_VARIANT := msm8998
-    TARGET_USES_QCOM_UM_FAMILY := true
-    TARGET_USES_QCOM_UM_4_4_FAMILY := true
-else ifneq ($(filter $(UM_4_9_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+else ifeq ($(call is-board-platform-in-list, $(UM_4_9_FAMILY)),true)
     MSM_VIDC_TARGET_LIST := $(UM_4_9_FAMILY)
     QCOM_HARDWARE_VARIANT := sdm845
     TARGET_USES_QCOM_UM_FAMILY := true
