@@ -171,6 +171,10 @@ PRODUCT_PACKAGES += \
     Eleven \
     MusicFX
 
+# MsmPapers
+PRODUCT_PACKAGES += \
+    MsmPapers
+
 # Extra Optional packages
 PRODUCT_PACKAGES += \
     Calculator \
