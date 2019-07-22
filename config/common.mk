@@ -212,7 +212,10 @@ PRODUCT_PACKAGES += \
     QStileOreo \
     QStileOreoCircleTrim \
     QStileOreoSquircleTrim \
-    QStilesCircleOutline 
+    QStilesCircleOutline \
+    QSTileNeonLight \
+    QSTileOxygen \
+    QSTileTriangles
 
 # Omni's PoorMan Themes
 PRODUCT_PACKAGES += \
