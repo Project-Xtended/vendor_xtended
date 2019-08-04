@@ -8,3 +8,9 @@ on boot
     # allow system to communicate pocket state
     chown system system /sys/kernel/pocket_judge/inpocket
 
+on property:sys.boot_completed=1
+    # Restrict permissions to socket file
+    # to hide Magisk & co.
+    chmod 440 /proc/net/unix
+
+
