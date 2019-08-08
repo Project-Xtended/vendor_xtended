@@ -9,5 +9,7 @@
     <color name="accent_device_default_light">@*android:color/omni_color3</color>
     <color name="accent_device_default_dark">@*android:color/omni_color4</color>
     <color name="colorAccent">@*android:color/omni_color5</color>
+    <color name="gradient_end_light">#ff8b64ce</color>
+    <color name="gradient_end_dark">#ff532f93</color>
 
 </resources>
