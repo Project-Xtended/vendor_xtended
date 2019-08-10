@@ -43,10 +43,10 @@ except ImportError:
 DEBUG = False
 default_manifest = ".repo/manifests/xtended_default.xml"
 custom_local_manifest = ".repo/local_manifests/xtended_manifest.xml"
-custom_default_revision = "8.1"
+custom_default_revision = "xp"
 custom_dependencies = "xtended.dependencies"
-org_manifest = "XTENDED-Devices"  # leave empty if org is provided in manifest
-org_display = "XTENDED-Devices"  # needed for displaying
+org_manifest = "Xtended-Devices"  # leave empty if org is provided in manifest
+org_display = "Xtended-Devices"  # needed for displaying
 
 github_auth = None
 
