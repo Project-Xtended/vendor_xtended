@@ -1,6 +1,6 @@
 # World APN list
-PRODUCT_PACKAGES += \
-    apns-conf.xml
+PRODUCT_COPY_FILES += \
+    vendor/xtended/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 
 # Selective SPN list for operator number who has the problem.
 PRODUCT_COPY_FILES += \
