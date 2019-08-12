@@ -79,6 +79,10 @@ endif
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.debug.alloc=0
 
+# Long screenshot
+PRODUCT_PACKAGES += \
+    Longshot
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/xtended/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
