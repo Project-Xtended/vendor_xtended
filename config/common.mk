@@ -124,6 +124,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.services.whitelist.packagelist=com.google.android.gms
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    vendor/xtended/prebuilt/common/etc/permissions/privapp-permissions-xtended.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-xtended.xml
+
 # Fix Dialer
 PRODUCT_COPY_FILES +=  \
 #    vendor/xtended/prebuilt/common/sysconfig/dialer_experience.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/dialer_experience.xml
