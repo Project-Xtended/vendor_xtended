@@ -122,10 +122,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/xtended/prebuilt/common/etc/permissions/xtended-power-whitelist.xml:system/etc/sysconfig/xtended-power-whitelist.xml
 
-# Don't export PS1 in /$(TARGET_COPY_OUT_SYSTEM)/etc/mkshrc.
-PRODUCT_COPY_FILES += \
-    vendor/xtended/prebuilt/common/etc/sysctl.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/sysctl.conf
-
 # whitelist packages for location providers not in system
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.services.whitelist.packagelist=com.google.android.gms
