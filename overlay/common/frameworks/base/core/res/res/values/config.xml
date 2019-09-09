@@ -71,6 +71,8 @@
     <!-- Flag indicating which package name can access the persistent data partition -->
     <string name="config_persistentDataPackageName" translatable="false">com.google.android.gms</string>
 
+    <string name="harmful_app_warning_title">Play Protect warning</string>
+
     <!-- Misc -->
     <string name="config_recentsComponentName" translatable="false">ch.deletescape.lawnchair.ci/com.android.quickstep.RecentsActivity</string>
 
@@ -101,6 +103,28 @@
          Example: "com.android.wellbeing"
      -->
     <string name="config_defaultWellbeingPackage">com.google.android.apps.wellbeing</string>
+
+    <!-- The package name of the default network recommendation app.
+         A network recommendation provider must:
+             * Be granted the SCORE_NETWORKS permission.
+             * Be granted the ACCESS_COARSE_LOCATION permission.
+             * Include a Service for the android.net.scoring.RECOMMEND_NETWORKS action
+               protected by the BIND_NETWORK_RECOMMENDATION_SERVICE permission.
+         This must be set to a valid network recommendation app or empty.
+     -->
+    <string name="config_defaultNetworkRecommendationProviderPackage">com.google.android.gms</string>
+
+    <!-- The package name for the incident report approver app.
+        This app is usually PermissionController or an app that replaces it.  When
+        a bugreport or incident report with EXPLICT-level sharing flags is going to be
+        shared, this app will be sent the PENDING_INCIDENT_REPORTS_CHANGED broadcast.
+    -->
+    <string name="config_incidentReportApproverPackage">com.android.permissioncontroller</string>
+
+
+    <!-- Flag indicating which package name can access DeviceConfig table -->
+    <string name="config_deviceConfiguratorPackageName">com.google.android.gms</string>
+
 
     <!-- Specifies the path that is used by AdaptiveIconDrawable class to crop launcher icons. -->
     <string name="config_icon_mask" translatable="false">"M50 0C77.6 0 100 22.4 100 50C100 77.6 77.6 100 50 100C22.4 100 0 77.6 0 50C0 22.4 22.4 0 50 0Z"</string>
@@ -155,6 +179,28 @@
         <item>com.google.android.apps.pixelmigrate</item>
     </string-array>
 
+
+    <!-- An array of packages that can make sound on the ringer stream in priority-only DND
+     mode -->
+    <string-array name="config_priorityOnlyDndExemptPackages">
+        <item>com.google.android.dialer</item>
+    </string-array>
+
+    <!-- A list of potential packages, in priority order, that may contain an
+         ephemeral resolver. Each package will be be queried for a component
+         that has been granted the PACKAGE_EPHEMERAL_AGENT permission.
+         This may be empty if ephemeral apps are not supported. -->
+    <string-array name="config_ephemeralResolverPackage">
+        <item>com.google.android.gms</item>
+    </string-array>
+
+    <!-- The component name for the default profile supervisor, which can be set as a profile owner
+    even after user setup is complete. The defined component should be used for supervision purposes
+    only. The component must be part of a system app. -->
+    <string name="config_defaultSupervisionProfileOwnerComponent">com.google.android.gms/.kids.account.receiver.ProfileOwnerReceiver</string>
+
+
+
     <!-- Colon separated list of package names that should be granted Notification Listener access -->
     <string name="config_defaultListenerAccessPackages" translatable="false">com.google.android.apps.nexuslauncher:com.google.android.setupwizard:com.google.android.apps.pixelmigrate:com.google.android.as:com.google.android.projection.gearhead:ch.deletescape.lawnchair.ci</string>
 
@@ -202,6 +248,67 @@
         <item>com.google.android.apps.gcs</item>
     </string-array>
 
+     <string-array name="config_locationExtraPackageNames">
+        <item>com.google.android.gms.location.history</item>
+    </string-array>
+
+    <!-- The component name, flattened to a string, for the default accessibility service to be
+         enabled by the accessibility shortcut. This service must be trusted, as it can be activated
+         without explicit consent of the user. If no accessibility service with the specified name
+         exists on the device, the accessibility shortcut will be disabled by default. -->
+    <string name="config_defaultAccessibilityService">com.google.android.marvin.talkback/.TalkBackService</string>
+
+    <!-- The name of the package that will hold the assistant role by default. -->
+    <string name="config_defaultAssistant">com.google.android.googlequicksearchbox</string>
+
+    <!-- The name of the package that will hold the assistant role by default. -->
+    <string name="config_defaultAssistantAccessComponent">com.google.android.ext.services/android.ext.services.notification.Assistant</string>
+
+    <!-- Apps that are authorized to access shared accounts, overridden by product overlays -->
+    <string name="config_appsAuthorizedForSharedAccounts">;com.android.vending;com.android.settings;</string>
+
+    <!-- Whether to enable fused location provider overlay which allows fused
+         location provider to be replaced by an app at run-time. When disabled,
+         only the config_fusedLocationProviderPackageName package will be
+         searched for fused location provider, otherwise packages whose
+         signature matches the signatures of config_locationProviderPackageNames
+         will be searched, and the service with the highest version number will
+         be picked. Anyone who wants to disable the overlay mechanism can set it
+         to false.
+         -->
+    <bool name="config_enableFusedLocationOverlay">true</bool>
+
+    <!-- Whether to enable geocoder overlay which allows geocoder to be replaced
+         by an app at run-time. When disabled, only the
+         config_geocoderProviderPackageName package will be searched for
+         geocoder, otherwise packages whose signature matches the signatures of
+         config_locationProviderPackageNames will be searched, and the service
+         with the highest version number will be picked. Anyone who wants to
+         disable the overlay mechanism can set it to false.
+         -->
+    <bool name="config_enableGeocoderOverlay">true</bool>
+
+        <!-- Whether to enable network location overlay which allows network
+         location provider to be replaced by an app at run-time. When disabled,
+         only the config_networkLocationProviderPackageName package will be
+         searched for network location provider, otherwise packages whose
+         signature matches the signatures of config_locationProviderPackageNames
+         will be searched, and the service with the highest version number will
+         be picked. Anyone who wants to disable the overlay mechanism can set it
+         to false.
+         -->
+    <bool name="config_enableNetworkLocationOverlay">true</bool>
+
+    <!-- Whether to enable geofence overlay which allows geofence to be replaced
+         by an app at run-time. When disabled, only the
+         config_geofenceProviderPackageName package will be searched for
+         geofence implementation, otherwise packages whose signature matches the
+         signatures of config_locationProviderPackageNames will be searched, and
+         the service with the highest version number will be picked. Anyone who
+         wants to disable the overlay mechanism can set it to false.
+         -->
+    <bool name="config_enableGeofenceOverlay">true</bool>
+
     <!-- The package of the time zone rules data application. Expected to be configured
          by OEMs to reference their own priv-app APK package.
          A package-targeted com.android.intent.action.timezone.TRIGGER_RULES_UPDATE_CHECK intent
@@ -234,11 +341,31 @@
     -->
     <string name="config_defaultContentSuggestionsService">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiContentSuggestionsService</string>
 
+    <!-- The package name for the system's augmented autofill service.
+         This service must be trusted, as it can be activated without explicit consent of the user.
+         If no service with the specified name exists on the device, augmented autofill wil be
+         disabled.
+         Example: "com.android.augmentedautofill/.AugmentedAutofillService"
+    -->
+    <string name="config_defaultAugmentedAutofillService">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiAugmentedAutofillService</string>
+
+    <!-- The package name for the system's content capture service.
+         This service must be trusted, as it can be activated without explicit consent of the user.
+         If no service with the specified name exists on the device, content capture will be
+         disabled.
+         Example: "com.android.contentcapture/.ContentcaptureService"
+    -->
+    <string name="config_defaultContentCaptureService">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiContentCaptureService</string>
+
+
     <!-- The component name for the default system attention service.
          This service must be trusted, as it can be activated without explicit consent of the user.
          See android.attention.AttentionManagerService.
     -->
     <string name="config_defaultAttentionService">com.google.android.as/com.google.android.apps.miphone.aiai.attention.service.AiAiAttentionService</string>
+
+    <!-- Package name for the device provisioning package. -->
+    <string name="config_deviceProvisioningPackage">com.google.android.apps.work.oobconfig</string>
 
     <!-- The component name for the system-wide captions service.
          This service must be trusted, as it controls part of the UI of the volume bar.
