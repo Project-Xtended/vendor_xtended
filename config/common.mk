@@ -144,6 +144,7 @@ PRODUCT_PACKAGES += \
     ExactCalculator \
     GalleryGoPrebuilt \
     GBoardPrebuilt \
+    SafetyHubPrebuilt \
     SettingsIntelligenceGooglePrebuilt \
     OmniJaws \
     OmniStyle \
