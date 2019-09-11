@@ -13,6 +13,8 @@ type Product_variables struct {
 	}
 	Device_support_hwfde_perf struct {
 		Cflags []string
+		Overrides []string
+		Shared_libs []string
 	}
 	Device_support_legacy_hwfde struct {
 		Cflags []string
