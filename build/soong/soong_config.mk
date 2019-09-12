@@ -23,6 +23,7 @@ $(call add_json_bool, Should_skip_waiting_for_qsee, $(filter true,$(TARGET_KEYMA
 $(call add_json_str_omitempty, Target_process_sdk_version_override, $(TARGET_PROCESS_SDK_VERSION_OVERRIDE))
 $(call add_json_str, Java_Source_Overlays, $(JAVA_SOURCE_OVERLAYS))
 $(call add_json_bool, Uses_metadata_as_fde_key, $(filter true,$(TARGET_USES_METADATA_AS_FDE_KEY)))
+$(call add_json_bool, Target_needs_netd_direct_connect_rule, $(filter true,$(TARGET_NEEDS_NETD_DIRECT_CONNECT_RULE)))
 $(call add_json_bool, Uses_qcom_bsp_legacy, $(filter true,$(TARGET_USES_QCOM_BSP_LEGACY)))
 $(call add_json_bool, Needs_camera_boottime_timestamp, $(filter true,$(TARGET_CAMERA_BOOTTIME_TIMESTAMP)))
 $(call add_json_bool, 	Target_camera_needs_client_info, $(filter true,$(TARGET_CAMERA_NEEDS_CLIENT_INFO)))
