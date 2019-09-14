@@ -80,7 +80,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.debug.alloc=0
 
 # Long screenshot
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     Longshot
 
 # Backup Tool
@@ -108,17 +108,6 @@ PRODUCT_COPY_FILES += \
 # Gzosp-specific init file
 PRODUCT_COPY_FILES += \
     vendor/xtended/prebuilt/common/etc/init.local.rc:root/init.xtended.rc
-
-# Copy LatinIME for gesture typing
-#ifeq ($(TARGET_ARCH),arm64)
-#PRODUCT_COPY_FILES += \
-    vendor/xtended/prebuilt/common/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so \
-    vendor/xtended/prebuilt/common/lib64/libjni_latinimegoogle.so:system/lib64/libjni_latinimegoogle.so
-#else
-#PRODUCT_COPY_FILES += \
-    vendor/xtended/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so \
-    vendor/xtended/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
-#endif
 
 # SELinux filesystem labels
 PRODUCT_COPY_FILES += \
@@ -166,14 +155,11 @@ PRODUCT_PACKAGES += \
     librsjni
 
 # JamesDSP
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
    libjamesdsp
 
-# MusicFX
-PRODUCT_PACKAGES += \
-    Recorder \
-    Eleven \
-    MusicFX
+#PRODUCT_PACKAGES += \
+    Recorder
 
 # MsmPapers
 PRODUCT_PACKAGES += \
@@ -183,8 +169,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Calculator \
     BluetoothExt \
-    OmniJaws \
-    OmniStyle \
     Lawnchair
 
 # Lawnchair
@@ -198,7 +182,7 @@ PRODUCT_PACKAGES += \
     StatusBarStock
 
 # QS tile styles
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     QStileCircleTrim \
     QStileDefault \
     QStileDualToneCircle \
@@ -222,7 +206,7 @@ PRODUCT_PACKAGES += \
     QSTileTriangles
 
 # Omni's PoorMan Themes
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     ContactsTheme \
     MessagesTheme \
     DocumentsUITheme \
@@ -230,21 +214,21 @@ PRODUCT_PACKAGES += \
     TelecommTheme
 
 # QS header styles
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     QSHeaderBlack \
     QSHeaderGrey \
     QSHeaderLightGrey \
     QSHeaderAccent \
     QSHeaderTransparent
 
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     NotificationsXtended \
     NotificationsBlack \
     NotificationsDark \
     NotificationsLight \
     NotificationsPrimary
 
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     AccentSluttyPink \
     AccentPixel \
     AccentGoldenShower \
@@ -295,7 +279,7 @@ PRODUCT_PACKAGES += \
     AccentShadesOfGrey \
     AccentBobBlue
 
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     PrimaryAlmostBlack \
     PrimaryBlack \
     PrimaryXtended \
@@ -312,7 +296,7 @@ PRODUCT_PACKAGES += \
     CustomDoze
 
 # Build OTA for Official Only
-PRODUCT_PACKAGES += XOta
+#PRODUCT_PACKAGES += XOta
 
 # Extra tools
 PRODUCT_PACKAGES += \
@@ -372,11 +356,11 @@ PRODUCT_COPY_FILES += \
     vendor/xtended/prebuilt/fonts/Shamshung/Shamshung.ttf:system/fonts/Shamshung.ttf
 
 # DU Font Engine
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
    DU-Fonts
 
 # Thermal Control Engine
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
    ThermalController
 
 PRODUCT_PACKAGES += \
@@ -396,7 +380,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGE_OVERLAYS += vendor/xtended/overlay/common
 
 # SubstratumSignature Package
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
      vendor/xtended/prebuilt/common/app/SubstratumSignature.apk:system/priv-app/SubstratumSignature/SubstratumSignature.apk
 
 # Themes
@@ -404,9 +388,9 @@ PRODUCT_COPY_FILES += \
 
 # Versioning System
 # Xtended first version.
-PRODUCT_VERSION_MAJOR = 9.0
-PRODUCT_VERSION_MAINTENANCE = XP9
-XTENDED_RELEASE_VERSION = Release-v18
+PRODUCT_VERSION_MAJOR = 10.0
+PRODUCT_VERSION_MAINTENANCE = XQ-Alpha
+XTENDED_RELEASE_VERSION = Pre-Release-v1
 XTENDED_POSTFIX := $(shell date +"%Y%m%d")
 XTENDED_BUILD_EXTRA := By-Team-Xtended
 ifndef XTENDED_BUILD_TYPE
