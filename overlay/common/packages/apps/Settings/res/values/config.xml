@@ -45,4 +45,9 @@
     -->
     <bool name="config_use_legacy_suggestion">false</bool>
 
+    <!-- Does the device allow updating the recovery. -->
+    <bool name="config_enableRecoveryUpdater">false</bool>
+
+    <bool name="config_show_avatar_in_homepage">true</bool>
+    
 </resources>
