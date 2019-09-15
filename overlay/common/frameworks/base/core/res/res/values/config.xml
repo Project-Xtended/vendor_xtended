@@ -223,4 +223,23 @@
          ASSIST_DISCLOSURE_ENABLED. -->
     <bool name="config_allowDisablingAssistDisclosure">true</bool>
 
+    <!-- Component name for default assistant on this device -->
+    <string name="config_defaultAssistantComponentName">com.google.android.googlequicksearchbox/com.google.android.voiceinteraction.GsaVoiceInteractionService</string>
+
+    <!-- The component name, flattened to a string, for the default autofill service
+         to  enabled for an user. This service must be trusted, as it can be activated
+         without explicit consent of the user. If no autofill service with the
+          specified name exists on the device, autofill will be disabled by default.
+    -->
+    <string name="config_defaultAutofillService" translatable="false">com.google.android.gms/.autofill.service.AutofillService</string>
+
+    <!-- Whether to send a custom package name with the PSD.-->
+    <bool name="config_sendPackageName">true</bool>
+
+    <!-- The amount to scale fullscreen snapshots for Overview and snapshot starting windows. -->
+    <item type="dimen" name="config_fullTaskSnapshotScale">0.8</item>
+
+    <!-- Sharesheet: define a max number of targets per application for new shortcuts-based direct share introduced in Q -->
+    <integer name="config_maxShortcutTargetsPerApp">8</integer>
+
 </resources>
