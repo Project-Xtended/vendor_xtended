@@ -35,6 +35,9 @@ type Product_variables struct {
 	Supports_hw_fde_perf struct {
 		Cflags []string
 	}
+	Target_camera_needs_client_info struct {
+		Cflags []string
+	}
 	Target_ignores_ftp_pptp_conntrack_failure struct {
 		Cppflags []string
 	}
@@ -81,6 +84,7 @@ type ProductVariables struct {
 	Supports_extended_compress_format  *bool `json:",omitempty"`
 	Supports_hw_fde  *bool `json:",omitempty"`
 	Supports_hw_fde_perf  *bool `json:",omitempty"`
+	Target_camera_needs_client_info  *bool `json:",omitempty"`
 	Target_ignores_ftp_pptp_conntrack_failure  *bool `json:",omitempty"`
 	Target_init_vendor_lib  *string `json:",omitempty"`
 	Target_needs_netd_direct_connect_rule  *bool `json:",omitempty"`
