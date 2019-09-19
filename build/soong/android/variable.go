@@ -74,6 +74,9 @@ type Product_variables struct {
 	Target_camera_needs_client_info struct {
 		Cppflags []string
 	}
+        Supports_extended_compress_format struct {
+		Cflags []string
+	}
 }
 
 type ProductVariables struct {
@@ -99,4 +102,5 @@ type ProductVariables struct {
 	Target_process_sdk_version_override *string `json:",omitempty"`
 	Needs_camera_boottime_timestamp  *bool `json:",omitempty"`
 	Target_camera_needs_client_info  *bool `json:",omitempty"`
+        Supports_extended_compress_format  *bool `json:",omitempty"`
 }
