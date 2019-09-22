@@ -347,3 +347,6 @@ PRODUCT_COPY_FILES += \
     vendor/xtended/fonts/GoogleSans-Bold.ttf:$(TARGET_COPY_OUT_SYSTEM)/fonts/GoogleSans-Bold.ttf \
     vendor/xtended/fonts/GoogleSans-BoldItalic.ttf:$(TARGET_COPY_OUT_SYSTEM)/fonts/GoogleSans-BoldItalic.ttf
 
+# Enable ccache
+USE_CCACHE := true
+
