@@ -289,3 +289,7 @@ PRODUCT_COPY_FILES += \
 ifeq ($(WITH_GAPPS),true)
 include vendor/gapps/config.mk
 endif
+
+# Enable ccache
+USE_CCACHE := true
+
