@@ -40,7 +40,11 @@ PRODUCT_COPY_FILES += \
     vendor/xtended/prebuilt/common/bin/backuptool_postinstall.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_postinstall.sh
 endif
 
-# Backup Services whitelist
+# system mount
+PRODUCT_COPY_FILES += \
+    vendor/xtended/build/tools/system-mount.sh:install/bin/system-mount.sh
+
+# Backup services whitelist
 PRODUCT_COPY_FILES += \
     vendor/xtended/config/permissions/backup.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/backup.xml
 
