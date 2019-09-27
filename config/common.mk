@@ -77,6 +77,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #PRODUCT_PACKAGES += \
     Longshot
 
+# ThemePicker
+PRODUCT_PACKAGES += \
+    ThemePicker
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/xtended/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
