@@ -155,10 +155,6 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
     librsjni
 
-# JamesDSP
-#PRODUCT_PACKAGES += \
-   libjamesdsp
-
 #PRODUCT_PACKAGES += \
     Recorder
 
@@ -169,11 +165,11 @@ PRODUCT_PACKAGES += \
 # Extra Optional packages
 PRODUCT_PACKAGES += \
     Calculator \
-    BluetoothExt \
-    Lawnchair
+    BluetoothExt
+#    Lawnchair
 
 # Lawnchair
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
     vendor/xtended/prebuilt/common/etc/permissions/privapp-permissions-lawnchair.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-lawnchair.xml \
     vendor/xtended/prebuilt/common/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml
 
@@ -195,116 +191,6 @@ PRODUCT_PACKAGES += \
     AccentColorFlatPinkOverlay \
     AccentColorCyanOverlay \
     AccentColorBlueGrayOverlay
-
-# QS tile styles
-#PRODUCT_PACKAGES += \
-    QStileCircleTrim \
-    QStileDefault \
-    QStileDualToneCircle \
-    QStileSquircleTrim \
-    QStileCookie \
-    QStileAttemptMountain \
-    QStileCircleDual \
-    QStileCircleGradient \
-    QStileDottedCircle \
-    QStileNinja \
-    QStilePokesign \
-    QStileWavey \
-    QStileInkDrop \
-    QStileSquaremedo \
-    QStileOreo \
-    QStileOreoCircleTrim \
-    QStileOreoSquircleTrim \
-    QStilesCircleOutline \
-    QSTileNeonLight \
-    QSTileOxygen \
-    QSTileTriangles
-
-# Omni's PoorMan Themes
-#PRODUCT_PACKAGES += \
-    ContactsTheme \
-    MessagesTheme \
-    DocumentsUITheme \
-    DialerTheme \
-    TelecommTheme
-
-# QS header styles
-#PRODUCT_PACKAGES += \
-    QSHeaderBlack \
-    QSHeaderGrey \
-    QSHeaderLightGrey \
-    QSHeaderAccent \
-    QSHeaderTransparent
-
-#PRODUCT_PACKAGES += \
-    NotificationsXtended \
-    NotificationsBlack \
-    NotificationsDark \
-    NotificationsLight \
-    NotificationsPrimary
-
-#PRODUCT_PACKAGES += \
-    AccentSluttyPink \
-    AccentPixel \
-    AccentGoldenShower \
-    AccentDeepOrange \
-    AccentMisticBrown \
-    AccentOmni \
-    AccentWhite \
-    AccentTeal \
-    AccentFromHell \
-    AccentBlueMonday \
-    AccentSmokingGreen \
-    AccentDeadRed \
-    AccentRottenOrange \
-    AccentDeepPurple \
-    AccentBlackMagic \
-    AccentCandyRed \
-    AccentJadeGreen \
-    AccentPaleBlue \
-    AccentPaleRed \
-    AccentObfusBleu \
-    AccentNotImpPurple \
-    AccentHolillusion \
-    AccentMoveMint \
-    AccentFootprintPurple \
-    AccentBubblegumPink \
-    AccentFrenchBleu \
-    AccentManiaAmber \
-    AccentSeasideMint \
-    AccentDreamyPurple \
-    AccentSpookedPurple \
-    AccentHeirloomBleu \
-    AccentTruFilPink \
-    AccentWarmthOrange \
-    AccentColdBleu \
-    AccentDiffDayGreen \
-    AccentDuskPurple \
-    AccentBurningRed \
-    AccentHazedPink \
-    AccentColdYellow \
-    AccentNewHouseOrange \
-    AccentIllusionsPurple \
-    AccentFlare \
-    AccentSublime \
-    AccentSincityRed \
-    AccentOrangeCoral \
-    AccentPureLust \
-    AccentQuepal \
-    AccentShadesOfGrey \
-    AccentBobBlue
-
-#PRODUCT_PACKAGES += \
-    PrimaryAlmostBlack \
-    PrimaryBlack \
-    PrimaryXtended \
-    PrimaryXtendedClear \
-    PrimaryEyeSoother \
-    PrimaryOmni \
-    PrimaryWhite \
-    PrimaryColdWhite \
-    PrimaryWarmWhite \
-    PrimaryDarkBlue
 
 # CustomDoze
 PRODUCT_PACKAGES += \
@@ -393,13 +279,6 @@ PRODUCT_PACKAGES += \
     SettingsDarkThemeOverlay
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/xtended/overlay/common
-
-# SubstratumSignature Package
-#PRODUCT_COPY_FILES += \
-     vendor/xtended/prebuilt/common/app/SubstratumSignature.apk:$(TARGET_COPY_OUT_SYSTEM)/priv-app/SubstratumSignature/SubstratumSignature.apk
-
-# Themes
-#$(call inherit-product-if-exists, vendor/xtended/products/themes.mk)
 
 # Versioning System
 # Xtended first version.
