@@ -174,7 +174,8 @@ PRODUCT_PACKAGES += \
     Calculator \
     BluetoothExt \
     OmniJaws \
-    PixelThemes
+    PixelThemes \
+    NexusLauncherRelease
 
 # Lawnchair
 #PRODUCT_COPY_FILES += \
