@@ -19,9 +19,6 @@ type Product_variables struct {
 		Overrides []string
 		Shared_libs []string
 	}
-	Device_support_legacy_hwfde struct {
-		Cflags []string
-	}
 	Device_support_wait_for_qsee struct {
 		Cflags []string
 	}
@@ -98,7 +95,6 @@ type ProductVariables struct {
 	Apply_msm8974_1440p_egl_workaround  *bool `json:",omitempty"`
 	Device_support_hwfde  *bool `json:",omitempty"`
 	Device_support_hwfde_perf  *bool `json:",omitempty"`
-	Device_support_legacy_hwfde  *bool `json:",omitempty"`
 	Device_support_wait_for_qsee  *bool `json:",omitempty"`
 	Has_legacy_camera_hal1  *bool `json:",omitempty"`
 	Needs_legacy_camera_hal1_dyn_native_handle  *bool `json:",omitempty"`
