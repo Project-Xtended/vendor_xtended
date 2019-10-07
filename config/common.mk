@@ -231,10 +231,8 @@ PRODUCT_PACKAGES += \
     nano \
     htop \
     gdbserver \
-    micro_bench \
     oprofiled \
     sqlite3 \
-    strace \
     pigz \
     7z \
     lib7z \
@@ -243,12 +241,13 @@ PRODUCT_PACKAGES += \
     curl \
     getcap \
     powertop \
+    procmem \
     setcap \
     unrar \
     unzip \
     vim \
     wget \
-    zip
+    zip 
 
 # Xtended Stuff - Copy to System fonts
 PRODUCT_COPY_FILES += \
