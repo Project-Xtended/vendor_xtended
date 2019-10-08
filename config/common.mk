@@ -286,8 +286,8 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/xtended/overlay/common
 # Versioning System
 # Xtended first version.
 PRODUCT_VERSION_MAJOR = 10.0
-PRODUCT_VERSION_MAINTENANCE = XQ-Alpha
-XTENDED_RELEASE_VERSION = Pre-Release-v1
+PRODUCT_VERSION_MAINTENANCE = XQ-Beta
+XTENDED_RELEASE_VERSION = Release-v2
 XTENDED_POSTFIX := $(shell date +"%Y%m%d")
 XTENDED_BUILD_EXTRA := By-Team-Xtended
 ifndef XTENDED_BUILD_TYPE
