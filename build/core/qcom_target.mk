@@ -1,10 +1,3 @@
-define wlan-set-path-variant
-$(call project-set-path-variant,wlan,TARGET_WLAN_VARIANT,hardware/$(1)/wlan)
-endef
-define bt-vendor-set-path-variant
-$(call project-set-path-variant,bt-vendor,TARGET_BT_VENDOR_VARIANT,hardware/$(1)/bt)
-endef
-
 # Set device-specific HALs into project pathmap
 define set-device-specific-path
 $(if $(USE_DEVICE_SPECIFIC_$(1)), \
@@ -23,18 +16,14 @@ $(call set-device-specific-path,AUDIO,audio,hardware/qcom-caf/$(QCOM_HARDWARE_VA
 $(call set-device-specific-path,DISPLAY,display,hardware/qcom-caf/$(QCOM_HARDWARE_VARIANT)/display)
 $(call set-device-specific-path,MEDIA,media,hardware/qcom-caf/$(QCOM_HARDWARE_VARIANT)/media)
 
+$(call set-device-specific-path,BT_VENDOR,bt-vendor,hardware/qcom-caf/bt)
 $(call set-device-specific-path,DATA_IPA_CFG_MGR,data-ipa-cfg-mgr,vendor/qcom/opensource/data-ipa-cfg-mgr)
 $(call set-device-specific-path,DATASERVICES,dataservices,vendor/qcom/opensource/dataservices)
 $(call set-device-specific-path,THERMAL,thermal,hardware/qcom-caf/thermal)
 $(call set-device-specific-path,VR,vr,hardware/qcom-caf/vr)
-
-$(call wlan-set-path-variant,qcom-caf)
-$(call bt-vendor-set-path-variant,qcom-caf)
+$(call set-device-specific-path,WLAN,wlan,hardware/qcom-caf/wlan)
 
 PRODUCT_CFI_INCLUDE_PATHS += \
     hardware/qcom-caf/wlan/qcwcn/wpa_supplicant_8_lib
-else
-
-$(call set-device-specific-path,PLATFORM_SUPERPROJECT,platform-superproject,hardware/qcom)
 
 endif
