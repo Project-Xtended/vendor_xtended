@@ -25,6 +25,10 @@
 	<permission name="android.permission.CAPTURE_AUDIO_OUTPUT"/>
     </privapp-permissions>
 
+    <privapp-permissions package="com.android.gallery3d">
+        <permission name="android.permission.MODIFY_AUDIO_ROUTING"/>
+    </privapp-permissions>
+
     <privapp-permissions package="com.android.fmradio">
         <permission name="android.permission.ACCESS_FM_RADIO"/>
         <permission name="android.permission.MODIFY_AUDIO_ROUTING"/>
@@ -35,7 +39,7 @@
         <permission name="android.permission.BIND_APPWIDGET"/>
         <permission name="android.permission.CONTROL_REMOTE_APP_TRANSITION_ANIMATIONS"/>
         <permission name="android.permission.PACKAGE_USAGE_STATS"/>
-        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+	<permission name="android.permission.WRITE_SECURE_SETTINGS"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.google.intelligence.sense">
