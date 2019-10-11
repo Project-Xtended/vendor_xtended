@@ -164,7 +164,8 @@ PRODUCT_PACKAGES += \
 
 # MsmPapers
 PRODUCT_PACKAGES += \
-    MsmPapers
+    MsmPapers \
+    ExactCalculator
 
 # Disable vendor restrictions
 PRODUCT_RESTRICT_VENDOR_FILES := false
