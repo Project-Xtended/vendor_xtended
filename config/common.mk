@@ -102,6 +102,22 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 # Disable vendor restrictions
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
+# Bootanimation
+TARGET_BOOTANIMATION_480P := $(shell \
+  if [ $(TARGET_SCREEN_WIDTH) -le 480 ]; then \
+    echo 'true'; \
+  else \
+    echo ''; \
+  fi )
+
+ifeq ($(TARGET_BOOTANIMATION_480P),true)
+PRODUCT_COPY_FILES += \
+    vendor/xtended/prebuilt/common/bootanimation/bootanimation-480p.zip:system/media/bootanimation.zip
+else
+PRODUCT_COPY_FILES += \
+    vendor/xtended/prebuilt/common/bootanimation/bootanimation.zip:system/media/bootanimation.zip
+endif
+
 # Xtended packages
 PRODUCT_PACKAGES += \
     XtendedThemesStub \
