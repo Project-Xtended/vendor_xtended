@@ -129,7 +129,8 @@ PRODUCT_PACKAGES += \
     ExactCalculator \
     GalleryGoPrebuilt \
     SettingsIntelligenceGooglePrebuilt \
-    OmniJaws
+    OmniJaws \
+    PixelThemes
     
 # Cutout control overlays
 PRODUCT_PACKAGES += \
