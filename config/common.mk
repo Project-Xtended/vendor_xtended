@@ -174,7 +174,8 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 PRODUCT_PACKAGES += \
     Calculator \
     BluetoothExt \
-    OmniJaws
+    OmniJaws \
+    PixelThemes
 
 # Lawnchair
 #PRODUCT_COPY_FILES += \
