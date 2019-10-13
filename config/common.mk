@@ -173,8 +173,8 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 # Extra Optional packages
 PRODUCT_PACKAGES += \
     Calculator \
-    BluetoothExt
-#    Lawnchair
+    BluetoothExt \
+    OmniJaws
 
 # Lawnchair
 #PRODUCT_COPY_FILES += \
