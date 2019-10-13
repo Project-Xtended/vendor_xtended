@@ -128,7 +128,8 @@ PRODUCT_PACKAGES += \
     BluetoothExt \
     ExactCalculator \
     GalleryGoPrebuilt \
-    SettingsIntelligenceGooglePrebuilt
+    SettingsIntelligenceGooglePrebuilt \
+    OmniJaws
     
 # Cutout control overlays
 PRODUCT_PACKAGES += \
