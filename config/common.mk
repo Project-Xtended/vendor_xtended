@@ -281,7 +281,7 @@ PRODUCT_COPY_FILES += \
 #PRODUCT_PACKAGES += \
    ThermalController
 
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     charger_res_images
 
 # Storage manager
