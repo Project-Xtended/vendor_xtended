@@ -153,7 +153,8 @@ PRODUCT_PACKAGES += \
     AccentColorIndigoOverlay \
     AccentColorFlatPinkOverlay \
     AccentColorCyanOverlay \
-    AccentColorBlueGrayOverlay
+    AccentColorBlueGrayOverlay \
+    AccentColorMintOverlay
 
 # Extra tools in Xtended
 PRODUCT_PACKAGES += \
