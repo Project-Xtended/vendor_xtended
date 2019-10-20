@@ -164,7 +164,9 @@ PRODUCT_PACKAGES += \
 # MsmPapers
 PRODUCT_PACKAGES += \
     MsmPapers \
-    ExactCalculator
+    ExactCalculator \
+    GalleryGoPrebuilt \
+    SettingsIntelligenceGooglePrebuilt
 
 # Disable vendor restrictions
 PRODUCT_RESTRICT_VENDOR_FILES := false
