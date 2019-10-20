@@ -24,7 +24,7 @@ endif
 
 # Default ringtone/notification/alarm sounds
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.config.ringtone=Zen_too.ogg,Hotline.ogg \
+    ro.config.ringtone=Despacito.ogg,PerfectStrangers.ogg \
     ro.config.notification_sound=Doink.ogg \
     ro.config.alarm_alert=Bright_morning.ogg
 
