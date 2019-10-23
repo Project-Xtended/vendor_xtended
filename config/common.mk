@@ -77,9 +77,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #PRODUCT_PACKAGES += \
     Longshot
 
-# ThemePicker
 PRODUCT_PACKAGES += \
-    ThemePicker
+    ThemePicker \
+    Trebuchet
 
 # Backup Tool
 ifeq ($(AB_OTA_UPDATER),true)
@@ -174,13 +174,7 @@ PRODUCT_PACKAGES += \
     Calculator \
     BluetoothExt \
     OmniJaws \
-    PixelThemes \
-    NexusLauncherRelease
-
-# Lawnchair
-#PRODUCT_COPY_FILES += \
-    vendor/xtended/prebuilt/common/etc/permissions/privapp-permissions-lawnchair.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-lawnchair.xml \
-    vendor/xtended/prebuilt/common/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml
+    PixelTheme
 
 # Cutout control overlays
 PRODUCT_PACKAGES += \
