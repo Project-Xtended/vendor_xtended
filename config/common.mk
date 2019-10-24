@@ -158,7 +158,7 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
     librsjni
 
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     Recorder
 
 # MsmPapers
