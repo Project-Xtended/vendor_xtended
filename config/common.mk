@@ -300,7 +300,8 @@ PRODUCT_PACKAGES += \
     AndroidDarkThemeOverlay \
     SettingsDarkThemeOverlay
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/xtended/overlay/common
+# Common overlay
+DEVICE_PACKAGE_OVERLAYS += vendor/xtended/overlay/common
 
 # Versioning System
 # Xtended first version.
