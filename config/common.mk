@@ -176,7 +176,7 @@ PRODUCT_PACKAGES += \
     Calculator \
     BluetoothExt \
     OmniJaws \
-    PixelTheme
+    PixelThemes
 
 # Cutout control overlays
 PRODUCT_PACKAGES += \
