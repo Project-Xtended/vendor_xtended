@@ -321,9 +321,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.xtended.display.version=$(XTENDED_DISPLAY_VERSION) \
     com.xtended.fingerprint=$(ROM_FINGERPRINT)
 
-# Google sounds
-include vendor/xtended/google/GoogleAudio.mk
-
 # Some props that we need for the google stuff we're adding
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.com.google.ime.height_ratio=1.05 \
