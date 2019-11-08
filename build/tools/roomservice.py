@@ -43,7 +43,7 @@ except ImportError:
 DEBUG = False
 default_manifest = ".repo/manifests/xtended_default.xml"
 custom_local_manifest = ".repo/local_manifests/xtended_manifest.xml"
-custom_default_revision = "xp"
+custom_default_revision = "xq"
 custom_dependencies = "xtended.dependencies"
 org_manifest = "Xtended-Devices"  # leave empty if org is provided in manifest
 org_display = "Xtended-Devices"  # needed for displaying
