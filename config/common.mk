@@ -82,17 +82,17 @@ PRODUCT_PACKAGES += \
     Trebuchet
 
 # Backup Tool
-ifneq ($(AB_OTA_PARTITIONS),)
+ifneq ($(AB_OTA_UPDATER),true)
 PRODUCT_COPY_FILES += \
     vendor/xtended/prebuilt/common/bin/backuptool_ab.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_ab.sh \
     vendor/xtended/prebuilt/common/bin/backuptool_ab.functions:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_ab.functions \
     vendor/xtended/prebuilt/common/bin/backuptool_postinstall.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_postinstall.sh
-else
-PRODUCT_COPY_FILES += \
-    vendor/xtended/prebuilt/common/bin/backuptool.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool.sh \
-    vendor/xtended/prebuilt/common/bin/backuptool.functions:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool.functions \
-    vendor/xtended/prebuilt/common/bin/50-xtended.sh:$(TARGET_COPY_OUT_SYSTEM)/addon.d/50-xtended.sh
 endif
+
+PRODUCT_COPY_FILES += \
+    vendor/xtended/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/xtended/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
+    vendor/xtended/prebuilt/common/bin/50-xtended.sh:system/addon.d/50-xtended.sh
 
 # system mount
 PRODUCT_COPY_FILES += \

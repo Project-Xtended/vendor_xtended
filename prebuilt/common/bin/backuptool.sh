@@ -5,7 +5,6 @@
 
 export C=/tmp/backupdir
 export S=$2
-export V=10.0
 
 export ADDOND_VERSION=1
 
@@ -42,50 +41,7 @@ restore_addon_d() {
   fi
 }
 
-# Proceed only if /system is the expected major and minor version
-check_prereq() {
-# If there is no build.prop file the partition is probably empty.
-if [ ! -r $S/build.prop ]; then
-    return 0
-fi
-if ! grep -q "^ro.xtended.version=$V.*" $S/build.prop; then
-  echo "Not backing up files from incompatible version: $V"
-  return 0
-fi
-return 1
-}
-
-check_blacklist() {
-  if [ -f $S/addon.d/blacklist -a -d /$1/addon.d/ ]; then
-      ## Discard any known bad backup scripts
-      cd /$1/addon.d/
-      for f in *sh; do
-          [ -f $f ] || continue
-          s=$(md5sum $f | cut -c-32)
-          grep -q $s $S/addon.d/blacklist && rm -f $f
-      done
-  fi
-}
-
-check_whitelist() {
-  found=0
-  if [ -f $S/addon.d/whitelist ];then
-      ## forcefully keep any version-independent stuff
-      cd /$1/addon.d/
-      for f in *sh; do
-          s=$(md5sum $f | cut -c-32)
-          grep -q $s $S/addon.d/whitelist
-          if [ $? -eq 0 ]; then
-              found=1
-          else
-              rm -f $f
-          fi
-      done
-  fi
-  return $found
-}
-
-# Execute /system/addon.d/*.sh scripts with $1 parameter
+# Execute /$S/addon.d/*.sh scripts with $1 parameter
 run_stage() {
 if [ -d /tmp/addon.d/ ]; then
   for script in $(find /tmp/addon.d/ -name '*.sh' |sort -n); do
@@ -97,24 +53,12 @@ fi
 case "$1" in
   backup)
     mkdir -p $C
-    if check_prereq; then
-        if check_whitelist system; then
-            exit 127
-        fi
-    fi
-    check_blacklist system
     preserve_addon_d
     run_stage pre-backup
     run_stage backup
     run_stage post-backup
   ;;
   restore)
-    if check_prereq; then
-        if check_whitelist tmp; then
-            exit 127
-        fi
-    fi
-    check_blacklist tmp
     run_stage pre-restore
     run_stage restore
     run_stage post-restore
@@ -128,4 +72,3 @@ case "$1" in
 esac
 
 exit 0
-
