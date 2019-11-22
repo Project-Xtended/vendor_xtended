@@ -67,6 +67,30 @@ type Product_variables struct {
 	Target_camera_needs_client_info struct {
 		Cppflags []string
 	}
+	Uses_qcom_um_family struct {
+		Cflags []string
+		Shared_libs []string
+	}
+	Uses_qcom_um_3_18_family struct {
+		Include_dirs []string
+		Header_libs []string
+		Shared_libs []string
+	}
+	Uses_qcom_um_4_4_family struct {
+		Include_dirs []string
+		Header_libs []string
+		Shared_libs []string
+	}
+	Uses_qcom_um_4_9_family struct {
+		Include_dirs []string
+		Header_libs []string
+		Shared_libs []string
+	}
+	Uses_qcom_um_4_14_family struct {
+		Include_dirs []string
+		Header_libs []string
+		Shared_libs []string
+	}
 }
 
 type ProductVariables struct {
