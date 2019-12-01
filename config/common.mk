@@ -308,7 +308,7 @@ DEVICE_PACKAGE_OVERLAYS += vendor/xtended/overlay/common
 # Xtended first version.
 PRODUCT_VERSION_MAJOR = 10.0
 PRODUCT_VERSION_MAINTENANCE = XQ
-XTENDED_RELEASE_VERSION = Release-v3.0
+XTENDED_RELEASE_VERSION = Release-v4.0
 XTENDED_POSTFIX := $(shell date +"%Y%m%d")
 XTENDED_BUILD_EXTRA := By-Team-Xtended
 ifndef XTENDED_BUILD_TYPE
