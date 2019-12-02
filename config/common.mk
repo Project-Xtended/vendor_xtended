@@ -236,7 +236,7 @@ PRODUCT_PACKAGES += \
 
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUIGoogle
+    SystemUI
 
 # Common overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/xtended/overlay/common
