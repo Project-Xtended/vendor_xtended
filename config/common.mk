@@ -196,7 +196,6 @@ PRODUCT_PACKAGES += \
     AccentColorYellowOverlay \
     AccentColorVioletOverlay \
     AccentColorTealOverlay \
-    AccentColorRedOverlay \
     AccentColorQGreenOverlay \
     AccentColorPinkOverlay \
     AccentColorLightPurpleOverlay \
