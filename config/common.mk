@@ -80,7 +80,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PACKAGES += \
     ThemePicker \
-    Trebuchet
+    Trebuchet \
+    Eleven \
+    Jelly 
 
 # Backup Tool
 ifneq ($(AB_OTA_UPDATER),true)
