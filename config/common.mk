@@ -33,12 +33,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
     ro.com.android.wifi-watchlist=GoogleGuest \
-    ro.setupwizard.require_network=any \
-    ro.setupwizard.mode=OPTIONAL \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.com.android.dataroaming=false \
     ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent \
-    ro.setupwizard.rotation_locked=true \
     ro.opa.eligible_device=true\
     persist.sys.wfd.nohdcp=1 \
     persist.debug.wfd.enable=1 \
@@ -350,4 +347,12 @@ PRODUCT_COPY_FILES += \
 
 # Enable ccache
 USE_CCACHE := true
+
+# SetupWizard
+PRODUCT_PRODUCT_PROPERTIES += \
+    setupwizard.enable_assist_gesture_training=true \
+    setupwizard.feature.baseline_setupwizard_enabled=true \
+    setupwizard.feature.show_pixel_tos=true \
+    setupwizard.feature.show_support_link_in_deferred_setup=false \
+    setupwizard.theme=glif_v3_light
 
