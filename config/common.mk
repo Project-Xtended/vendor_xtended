@@ -25,10 +25,29 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=0
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.wfd.nohdcp=1 \
     persist.debug.wfd.enable=1 \
-    persist.sys.wfd.virtual=0 \
+    persist.sys.wfd.virtual=0 
+
+PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1 \
     persist.sys.dun.override=0 \
+
+# TEMP: Enable transitional log for Privileged permissions
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.control_privapp_permissions=log
+
+# Some props that we need for the google stuff we're adding
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.com.google.ime.height_ratio=1.05 \
+    ro.com.google.ime.emoji_key=false \
     ro.com.google.ime.theme_id=5
+
+# Storage manager
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.storage_manager.enabled=true
+
+# Media
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    media.recorder.show_manufacturer_and_model=true
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
@@ -206,14 +225,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     rsync
 
-# Storage manager
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.storage_manager.enabled=true
-
-# Media
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    media.recorder.show_manufacturer_and_model=true
-
 # These packages are excluded from user builds
 PRODUCT_PACKAGES_DEBUG += \
     procmem
@@ -243,11 +254,6 @@ DEVICE_PACKAGE_OVERLAYS += vendor/xtended/overlay/common
 
 # Include Xtended theme files
 include vendor/xtended/themes/backgrounds/themes.mk
-
-# Some props that we need for the google stuff we're adding
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.com.google.ime.height_ratio=1.05 \
-    ro.com.google.ime.emoji_key=false
 
 # Gapps
 ifeq ($(WITH_GAPPS),true)
