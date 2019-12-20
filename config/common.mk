@@ -203,7 +203,8 @@ PRODUCT_PACKAGES += \
     AccentColorCyanOverlay \
     AccentColorBlueGrayOverlay \
     AccentColorMintOverlay \
-    AccentColorXtendedOverlay
+    AccentColorXtendedOverlay \
+    AccentColorGradientIndianOverlay
 
 # CustomDoze
 PRODUCT_PACKAGES += \
