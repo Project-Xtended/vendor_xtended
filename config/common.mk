@@ -293,6 +293,13 @@ PRODUCT_COPY_FILES += \
     vendor/xtended/fonts/GoogleSans-Bold.ttf:system/fonts/GoogleSans-Bold.ttf \
     vendor/xtended/fonts/GoogleSans-BoldItalic.ttf:system/fonts/GoogleSans-BoldItalic.ttf
 
+# NavigationBar Gestural Mode No Pill Overlays
+PRODUCT_PACKAGES += \
+    NavBarGesturalNoPillOverlay \
+    NavBarGesturalNarrowBackNoPillOverlay \
+    NavBarGesturalWideBackNoPillOverlay \
+    NavBarGesturalExtraWideBackNoPillOverlay
+
 # Gapps
 ifeq ($(WITH_GAPPS),true)
 include vendor/gapps/config.mk
