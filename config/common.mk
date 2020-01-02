@@ -222,3 +222,8 @@ PRODUCT_COPY_FILES += \
     vendor/xtended/fonts/GoogleSans-Italic.ttf:system/fonts/GoogleSans-Italic.ttf \
     vendor/xtended/fonts/GoogleSans-Bold.ttf:system/fonts/GoogleSans-Bold.ttf \
     vendor/xtended/fonts/GoogleSans-BoldItalic.ttf:system/fonts/GoogleSans-BoldItalic.ttf
+
+# Gapps
+ifeq ($(WITH_GAPPS),true)
+include vendor/gapps/config.mk
+endif
