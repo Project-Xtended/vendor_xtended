@@ -1,5 +1,4 @@
-#
-# Copyright (C) 2018-2019 The LineageOS Project
+# Copyright (C) 2019 The xtendedOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,16 +11,14 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xtended_arm.mk \
-    $(LOCAL_DIR)/xtended_arm64.mk \
-    $(LOCAL_DIR)/xtended_x86.mk \
-    $(LOCAL_DIR)/xtended_x86_64.mk
+$(call inherit-product, vendor/xtended/config/common.mk)
 
-COMMON_LUNCH_CHOICES := \
-    xtended_arm-userdebug \
-    xtended_arm64-userdebug \
-    xtended_x86-userdebug \
-    xtended_x86_64-userdebug
+PRODUCT_COPY_FILES += \
+    device/generic/goldfish/data/etc/permissions/privapp-permissions-goldfish.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-goldfish.xml \
+
+# Allow building otatools
+TARGET_FORCE_OTA_PACKAGE := true
+
+PRODUCT_SDK_ADDON_NAME := xtended
+PRODUCT_SDK_ADDON_SYS_IMG_SOURCE_PROP := $(LOCAL_PATH)/source.properties
