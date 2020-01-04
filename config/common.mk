@@ -117,7 +117,8 @@ PRODUCT_COPY_FILES += \
 
 # Power whitelist
 PRODUCT_COPY_FILES += \
-    vendor/xtended/config/permissions/xtended-power-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/xtended-power-whitelist.xml
+    vendor/xtended/config/permissions/xtended-power-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/xtended-power-whitelist.xml \
+    vendor/xtended/config/permissions/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml
 
 # Include AOSP audio files
 include vendor/xtended/config/aosp_audio.mk
