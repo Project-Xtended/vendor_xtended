@@ -74,6 +74,7 @@ PRODUCT_COPY_FILES += \
 
 # This is Xtended!
 PRODUCT_COPY_FILES += \
+   vendor/xtended/config/permissions/privapp-permissions-google_prebuilt.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-google_prebuilt.xml \
    vendor/xtended/config/permissions/privapp-permissions-xtended.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-xtended.xml
 
 # Hidden API whitelist
