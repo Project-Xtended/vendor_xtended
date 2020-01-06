@@ -143,6 +143,7 @@ PRODUCT_PACKAGES += \
     BluetoothExt \
     ExactCalculator \
     GalleryGoPrebuilt \
+    GBoardPrebuilt \
     SettingsIntelligenceGooglePrebuilt \
     OmniJaws \
     OmniStyle \
