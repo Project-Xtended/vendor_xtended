@@ -57,14 +57,25 @@ TARGET_BOOTANIMATION_480P := $(shell \
   else \
     echo ''; \
   fi )
+TARGET_BOOTANIMATION_720P := $(shell \
+  if [ $(TARGET_SCREEN_WIDTH) -le 720 ]; then \
+    echo 'true'; \
+  else \
+    echo ''; \
+  fi )
 
 # Bootanimation
 ifeq ($(TARGET_BOOTANIMATION_480P),true)
 PRODUCT_COPY_FILES += \
-    vendor/xtended/prebuilt/common/bootanimation/bootanimation-480p.zip:$(TARGET_COPY_OUT_SYSTEM)/media/bootanimation.zip
+    vendor/xtended/prebuilt/common/bootanimation/bootanimation-480.zip:$(TARGET_COPY_OUT_SYSTEM)/media/bootanimation.zip
+else
+ifeq ($(TARGET_BOOTANIMATION_720P),true)
+PRODUCT_COPY_FILES += \
+    vendor/xtended/prebuilt/common/bootanimation/bootanimation-720.zip:$(TARGET_COPY_OUT_SYSTEM)/media/bootanimation.zip
 else
 PRODUCT_COPY_FILES += \
     vendor/xtended/prebuilt/common/bootanimation/bootanimation.zip:$(TARGET_COPY_OUT_SYSTEM)/media/bootanimation.zip
+endif
 endif
 
 # Disable excessive dalvik debug messages
