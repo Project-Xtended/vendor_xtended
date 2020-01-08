@@ -25,7 +25,6 @@ else
 # Enable ADB authentication
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=1
 endif
-endif
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
@@ -131,6 +130,7 @@ PRODUCT_COPY_FILES += \
 else
 PRODUCT_COPY_FILES += \
     vendor/xtended/prebuilt/common/bootanimation/bootanimation.zip:system/media/bootanimation.zip
+endif
 endif
 
 # Xtended packages
