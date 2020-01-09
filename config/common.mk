@@ -145,6 +145,7 @@ PRODUCT_PACKAGES += \
     GalleryGoPrebuilt \
     SettingsIntelligenceGooglePrebuilt \
     OmniJaws \
+    OmniStyle \
     Lawnchair \
     PixelThemes
 
