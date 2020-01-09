@@ -135,7 +135,6 @@ endif
 
 # Xtended packages
 PRODUCT_PACKAGES += \
-    XtendedThemesStub \
     ThemePicker \
     Eleven \
     Jelly \
@@ -149,7 +148,7 @@ PRODUCT_PACKAGES += \
     OmniJaws \
     OmniStyle \
     Lawnchair \
-    PixelThemes
+    PixelThemesStub2019
 
 # Cutout control overlays
 PRODUCT_PACKAGES += \
