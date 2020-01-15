@@ -137,7 +137,6 @@ endif
 
 # Xtended packages
 PRODUCT_PACKAGES += \
-    ThemePicker \
     Eleven \
     Jelly \
     Calculator \
