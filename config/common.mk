@@ -26,6 +26,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.wfd.nohdcp=1 \
     persist.debug.wfd.enable=1 \
     persist.sys.wfd.virtual=0 \
+    ro.build.selinux=1 \
+    persist.sys.dun.override=0 \
+    ro.com.google.ime.theme_id=5
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
@@ -292,6 +295,11 @@ PRODUCT_COPY_FILES += \
     vendor/xtended/fonts/GoogleSans-Italic.ttf:system/fonts/GoogleSans-Italic.ttf \
     vendor/xtended/fonts/GoogleSans-Bold.ttf:system/fonts/GoogleSans-Bold.ttf \
     vendor/xtended/fonts/GoogleSans-BoldItalic.ttf:system/fonts/GoogleSans-BoldItalic.ttf
+
+# Some props that we need for the google stuff we're adding
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.com.google.ime.height_ratio=1.05 \
+    ro.com.google.ime.emoji_key=false
 
 # Gapps
 ifeq ($(WITH_GAPPS),true)
