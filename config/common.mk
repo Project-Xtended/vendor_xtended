@@ -21,6 +21,12 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Disable ADB authentication
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=0
 
+# Enable WiFi Display
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.wfd.nohdcp=1 \
+    persist.debug.wfd.enable=1 \
+    persist.sys.wfd.virtual=0 \
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/xtended/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
