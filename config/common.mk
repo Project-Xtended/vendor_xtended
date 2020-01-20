@@ -287,6 +287,9 @@ DEVICE_PACKAGE_OVERLAYS += vendor/xtended/overlay/common
 -include vendor/xtended/config/version.mk
 -include vendor/xtended/config/partner_gms.mk
 
+# Include Xtended theme files
+include vendor/xtended/themes/backgrounds/themes.mk
+
 # Fonts
 PRODUCT_COPY_FILES += \
     vendor/xtended/fonts/GoogleSans-Regular.ttf:system/fonts/GoogleSans-Regular.ttf \
