@@ -17,18 +17,6 @@ PRODUCT_PACKAGES += \
     ExactCalculator \
     Exchange2
 
-# Charger
-PRODUCT_PACKAGES += \
-    charger_res_images
-
-# Custom off-mode charger
-ifeq ($(WITH_XTENDED_CHARGER),true)
-PRODUCT_PACKAGES += \
-    xtended_charger_res_images \
-    font_log.png \
-    libhealthd.xtended
-endif
-
 # Media
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     media.recorder.show_manufacturer_and_model=true

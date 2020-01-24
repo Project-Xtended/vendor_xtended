@@ -132,6 +132,11 @@ PRODUCT_PACKAGES += \
     wget \
     zip
 
+# Offline charger
+PRODUCT_PACKAGES += \
+    charger_res_images \
+    product_charger_res_images
+
 # Filesystems tools
 PRODUCT_PACKAGES += \
     fsck.exfat \
