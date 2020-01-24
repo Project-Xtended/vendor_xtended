@@ -167,6 +167,11 @@ PRODUCT_PACKAGES += \
     wget \
     zip
 
+# Offline charger
+PRODUCT_PACKAGES += \
+    charger_res_images \
+    product_charger_res_images
+
 # Lawnchair
 PRODUCT_COPY_FILES += \
     vendor/xtended/prebuilt/common/etc/permissions/privapp-permissions-lawnchair.xml:system/etc/permissions/privapp-permissions-lawnchair.xml \
