@@ -153,6 +153,7 @@ PRODUCT_PACKAGES += \
     OmniJaws \
     OmniStyle \
     Lawnchair \
+    WallpaperPicker2 \
     PixelThemesStub2019
 
 # Cutout control overlays
