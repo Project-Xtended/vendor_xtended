@@ -99,6 +99,9 @@ include vendor/xtended/config/xtended_audio.mk
 # Include Google fonts
 include vendor/xtended/config/fonts.mk
 
+# Bootanimation
+include vendor/xtended/config/bootanimation.mk
+
 # TWRP
 ifeq ($(WITH_TWRP),true)
 include vendor/xtended/config/twrp.mk
@@ -114,33 +117,6 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 
 # Disable vendor restrictions
 PRODUCT_RESTRICT_VENDOR_FILES := false
-
-# Bootanimation
-TARGET_BOOTANIMATION_480P := $(shell \
-  if [ $(TARGET_SCREEN_WIDTH) -le 480 ]; then \
-    echo 'true'; \
-  else \
-    echo ''; \
-  fi )
-TARGET_BOOTANIMATION_720P := $(shell \
-  if [ $(TARGET_SCREEN_WIDTH) -le 720 ]; then \
-    echo 'true'; \
-  else \
-    echo ''; \
-  fi )
-
-ifeq ($(TARGET_BOOTANIMATION_480P),true)
-PRODUCT_COPY_FILES += \
-    vendor/xtended/prebuilt/common/bootanimation/bootanimation-480.zip:$(TARGET_COPY_OUT_SYSTEM)/media/bootanimation.zip
-else
-ifeq ($(TARGET_BOOTANIMATION_720P),true)
-PRODUCT_COPY_FILES += \
-    vendor/xtended/prebuilt/common/bootanimation/bootanimation-720.zip:$(TARGET_COPY_OUT_SYSTEM)/media/bootanimation.zip
-else
-PRODUCT_COPY_FILES += \
-    vendor/xtended/prebuilt/common/bootanimation/bootanimation.zip:system/media/bootanimation.zip
-endif
-endif
 
 # Xtended packages
 PRODUCT_PACKAGES += \
