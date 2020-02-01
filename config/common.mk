@@ -172,18 +172,6 @@ PRODUCT_COPY_FILES += \
     vendor/xtended/prebuilt/common/etc/permissions/privapp-permissions-lawnchair.xml:system/etc/permissions/privapp-permissions-lawnchair.xml \
     vendor/xtended/prebuilt/common/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml:system/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml
 
-# Charger
-PRODUCT_PACKAGES += \
-    charger_res_images
-
-# Custom off-mode charger
-ifeq ($(WITH_XTENDED_CHARGER),true)
-PRODUCT_PACKAGES += \
-    xtended_charger_res_images \
-    font_log.png \
-    libhealthd.xtended
-endif
-
 # Filesystems tools
 PRODUCT_PACKAGES += \
     fsck.exfat \
