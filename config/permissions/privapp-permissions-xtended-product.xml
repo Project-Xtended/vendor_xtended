@@ -66,9 +66,6 @@
     </privapp-permissions>
 
     <privapp-permissions package="com.android.systemui">
-        <permission name="android.permission.FORCE_STOP_PACKAGES"/>
-        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
-        <permission name="android.permission.SHUTDOWN"/>
         <permission name="android.permission.MODIFY_DAY_NIGHT_MODE"/>
         <permission name="android.permission.CHANGE_CONFIGURATION"/>
         <permission name="android.permission.FORCE_STOP_PACKAGES"/>
@@ -76,6 +73,13 @@
         <permission name="android.permission.SHUTDOWN"/>
         <permission name="android.permission.REBOOT" />
         <permission name="android.permission.NAVIGATION_EDITOR"/>
+        <permission name="android.permission.ACCESS_SURFACE_FLINGER"/>
+        <permission name="android.permission.MANAGE_DOCUMENTS"/>
+        <permission name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+        <permission name="android.permission.READ_SYNC_SETTINGS"/>
+        <permission name="android.permission.RECORD_AUDIO"/>
+        <permission name="android.permission.WRITE_APN_SETTINGS"/>
+        <permission name="android.permission.WRITE_SYNC_SETTINGS"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.android.wallpaper">
