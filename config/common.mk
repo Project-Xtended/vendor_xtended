@@ -129,6 +129,7 @@ PRODUCT_PACKAGES += \
     GBoardPrebuilt \
     SafetyHubPrebuilt \
     SettingsIntelligenceGooglePrebuilt \
+    DevicePersonalizationServices \
     Longshot \
     OmniJaws \
     OmniStyle \
