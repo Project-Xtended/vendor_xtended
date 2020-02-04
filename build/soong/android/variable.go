@@ -64,38 +64,17 @@ type Product_variables struct {
 		Cppflags []string
 		Shared_libs []string
 	}
-        Target_camera_needs_client_info struct {
+	Target_camera_needs_client_info struct {
 		Cppflags []string
-        }
-	Uses_qcom_um_family struct {
-		Cflags []string
-		Srcs []string
-		Shared_libs []string
-	}
-	Uses_qcom_um_3_18_family struct {
-		Header_libs []string
-		Shared_libs []string
-	}
-	Uses_qcom_um_4_4_family struct {
-		Header_libs []string
-		Shared_libs []string
-	}
-	Uses_qcom_um_4_9_family struct {
-		Header_libs []string
-		Shared_libs []string
-	}
-	Uses_qcom_um_4_14_family struct {
-		Header_libs []string
-		Shared_libs []string
 	}
 }
 
 type ProductVariables struct {
 	Additional_gralloc_10_usage_bits  *string `json:",omitempty"`
-        Device_support_hwfde  *bool `json:",omitempty"`
+	Device_support_hwfde  *bool `json:",omitempty"`
 	Device_support_hwfde_perf  *bool `json:",omitempty"`
 	Device_support_legacy_hwfde  *bool `json:",omitempty"`
-        Apply_msm8974_1440p_egl_workaround  *bool `json:",omitempty"`
+	Apply_msm8974_1440p_egl_workaround  *bool `json:",omitempty"`
 	Bootloader_message_offset  *int `json:",omitempty"`
 	Has_legacy_camera_hal1  *bool `json:",omitempty"`
 	Should_wait_for_qsee  *bool `json:",omitempty"`
@@ -111,7 +90,7 @@ type ProductVariables struct {
 	Uses_nvidia_enhancements  *bool `json:",omitempty"`
 	Uses_qcom_bsp_legacy  *bool `json:",omitempty"`
 	Uses_qti_camera_device  *bool `json:",omitempty"`
-        Target_camera_needs_client_info  *bool `json:",omitempty"`
+	Target_camera_needs_client_info  *bool `json:",omitempty"`
 	Uses_qcom_um_family  *bool `json:",omitempty"`
 	Uses_qcom_um_3_18_family  *bool `json:",omitempty"`
 	Uses_qcom_um_4_4_family  *bool `json:",omitempty"`
