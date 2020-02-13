@@ -120,7 +120,7 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 
 # Xtended packages
 PRODUCT_PACKAGES += \
-    Eleven \
+    VinylMusicPlayer \
     Jelly \
     Calculator \
     BluetoothExt \

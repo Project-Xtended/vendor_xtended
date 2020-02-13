@@ -28,7 +28,7 @@
         <permission name="android.permission.MODIFY_AUDIO_ROUTING"/>
     </privapp-permissions>
 
-    <privapp-permissions package="org.lineageos.eleven">
+    <privapp-permissions package="com.poupa.vinylmusicplayer">
         <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
     </privapp-permissions>
 
