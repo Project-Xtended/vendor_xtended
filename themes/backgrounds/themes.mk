@@ -7,5 +7,6 @@ PRODUCT_PACKAGES += \
     BakedGreenSystemOverlay \
     BakedGreenSystemUIOverlay \
     ChocoXSystemOverlay \
-    ChocoXSystemUIOverlay
-
+    ChocoXSystemUIOverlay \
+    DarkGreySystemOverlay \
+    DarkGreySystemUIOverlay
