@@ -130,6 +130,7 @@ PRODUCT_PACKAGES += \
     SafetyHubPrebuilt \
     SettingsIntelligenceGooglePrebuilt \
     DevicePersonalizationServices \
+    OPScreenRecorder \
     Longshot \
     OmniJaws \
     OmniStyle \
