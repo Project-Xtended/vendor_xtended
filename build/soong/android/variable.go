@@ -65,7 +65,7 @@ type Product_variables struct {
 		Shared_libs []string
 	}
 	Target_camera_needs_client_info struct {
-		Cppflags []string
+                Cflags []string
 	}
 	Uses_qcom_um_family struct {
 		Cflags []string
