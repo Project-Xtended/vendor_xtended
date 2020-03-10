@@ -15,7 +15,8 @@ endif
 PRODUCT_PACKAGES += \
     Email \
     ExactCalculator \
-    Exchange2
+    Exchange2 \
+    Seedvault
 
 # Media
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
