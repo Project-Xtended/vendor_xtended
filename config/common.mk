@@ -158,7 +158,6 @@ PRODUCT_PACKAGES += \
     GBoardPrebuilt \
     SafetyHubPrebuilt \
     SettingsIntelligenceGooglePrebuilt \
-    DevicePersonalizationServices \
     OPScreenRecorder \
     Longshot \
     OmniJaws \
