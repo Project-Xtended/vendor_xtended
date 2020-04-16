@@ -22,9 +22,14 @@
 
     <style name="SuggestionCardIcon">
         <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginStart">12.0dip</item>
+        <item name="android:layout_marginEnd">12.0dip</item>
         <item name="android:layout_alignParentStart">false</item>
-        <item name="android:layout_marginStart">12dp</item>
-        <item name="android:layout_marginEnd">12dp</item>
     </style>
 
+    <style name="TextAppearance.SearchBar" parent="@*android:style/TextAppearance.Material.Widget.Toolbar.Subtitle">
+        <item name="android:textSize">16dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:fontFamily">google-sans</item>
+    </style>
 </resources>
