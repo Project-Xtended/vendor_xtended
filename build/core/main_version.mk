@@ -6,8 +6,11 @@ endif
 
 # Xtended System Version
 ADDITIONAL_BUILD_PROPERTIES += \
+    ro.xtended.version=$(XTENDED_VERSION) \
+    ro.xtended.display.version=$(XTENDED_DISPLAY_VERSION) \
+    ro.modversion=$(XTENDED_MOD_VERSION) \
+    ro.xtended.buildtype=$(XTENDED_BUILD_TYPE) \
     ro.xtended.build.date=$(XTENDED_BUILD_DATE) \
-    ro.xtended.build.version=$(XTENDED_BUILD_VERSION) \
-    ro.xtended.fingerprint=$(XTENDED_FINGERPRINT) \
+    com.xtended.fingerprint=$(XTENDED_FINGERPRINT) \
     ro.xtended.releasetype=$(XTENDED_BUILD_TYPE) \
-    ro.xtended.version=$(XTENDED_VERSION)E_PLATFORM_REV)
+    ro.xtended.maintainer=$(XTENDED_MAINTAINER)
