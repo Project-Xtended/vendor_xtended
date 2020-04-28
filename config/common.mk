@@ -129,8 +129,8 @@ include vendor/xtended/config/aosp_audio.mk
 # Include Xtended audio files
 include vendor/xtended/config/xtended_audio.mk
 
-# Include Google fonts
-include vendor/xtended/config/fonts.mk
+# Include Vendor Xtras
+include vendor/xtras/xtras.mk
 
 # Bootanimation
 include vendor/xtended/config/bootanimation.mk
@@ -153,22 +153,13 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 
 # Xtended packages
 PRODUCT_PACKAGES += \
-    VinylMusicPlayer \
     Jelly \
     Calculator \
     BluetoothExt \
     ExactCalculator \
-    GalleryGoPrebuilt \
-    GBoardPrebuilt \
-    SafetyHubPrebuilt \
-    SettingsIntelligenceGooglePrebuilt \
-    OPScreenRecorder \
-    Longshot \
     OmniJaws \
     OmniStyle \
-    Lawnchair \
-    WallpaperPicker2 \
-    PixelThemesStub2019
+    WallpaperPicker2
 
 # Cutout control overlays
 PRODUCT_PACKAGES += \
@@ -267,9 +258,6 @@ DEVICE_PACKAGE_OVERLAYS += vendor/xtended/overlay/common
 
 # Allow overlays to be excluded from enforcing RRO
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/xtended/overlay
-
-# Include Xtended theme files
-include vendor/xtended/themes/backgrounds/themes.mk
 
 # Gapps
 ifeq ($(WITH_GAPPS),true)
