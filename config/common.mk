@@ -110,7 +110,6 @@ PRODUCT_COPY_FILES += \
 
 # This is Xtended!
 PRODUCT_COPY_FILES += \
-   vendor/xtended/config/permissions/privapp-permissions-google_prebuilt.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-google_prebuilt.xml \
    vendor/xtended/config/permissions/privapp-permissions-xtended-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-xtended.xml \
    vendor/xtended/config/permissions/privapp-permissions-xtended-system.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-xtended.xml
 
@@ -120,8 +119,7 @@ PRODUCT_COPY_FILES += \
 
 # Power whitelist
 PRODUCT_COPY_FILES += \
-    vendor/xtended/config/permissions/xtended-power-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/xtended-power-whitelist.xml \
-    vendor/xtended/config/permissions/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml
+    vendor/xtended/config/permissions/xtended-power-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/xtended-power-whitelist.xml
 
 # Include AOSP audio files
 include vendor/xtended/config/aosp_audio.mk
