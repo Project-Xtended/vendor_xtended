@@ -192,8 +192,12 @@ PRODUCT_PACKAGES += \
 
 # Offline charger
 PRODUCT_PACKAGES += \
-    charger_res_images \
+    charger_res_images
+
+ifneq ($(TARGET_USES_AOSP_CHARGER),true)
+PRODUCT_PACKAGES += \
     product_charger_res_images
+endif
 
 # Lawnchair
 PRODUCT_COPY_FILES += \
