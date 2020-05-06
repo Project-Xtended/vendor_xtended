@@ -113,10 +113,6 @@ PRODUCT_COPY_FILES += \
    vendor/xtended/config/permissions/privapp-permissions-xtended-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-xtended.xml \
    vendor/xtended/config/permissions/privapp-permissions-xtended-system.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-xtended.xml
 
-# Hidden API whitelist
-PRODUCT_COPY_FILES += \
-    vendor/xtended/config/permissions/xtended-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/xtended-hiddenapi-package-whitelist.xml
-
 # Power whitelist
 PRODUCT_COPY_FILES += \
     vendor/xtended/config/permissions/xtended-power-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/xtended-power-whitelist.xml
