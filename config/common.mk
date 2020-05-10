@@ -151,7 +151,6 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 
 # Xtended packages
 PRODUCT_PACKAGES += \
-    Jelly \
     Calculator \
     BluetoothExt \
     ExactCalculator \
@@ -198,11 +197,6 @@ ifneq ($(TARGET_USES_AOSP_CHARGER),true)
 PRODUCT_PACKAGES += \
     product_charger_res_images
 endif
-
-# Lawnchair
-PRODUCT_COPY_FILES += \
-    vendor/xtended/prebuilt/common/etc/permissions/privapp-permissions-lawnchair.xml:system/etc/permissions/privapp-permissions-lawnchair.xml \
-    vendor/xtended/prebuilt/common/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml:system/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml
 
 # Filesystems tools
 PRODUCT_PACKAGES += \
