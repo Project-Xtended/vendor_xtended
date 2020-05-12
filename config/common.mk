@@ -157,6 +157,7 @@ PRODUCT_PACKAGES += \
     ExactCalculator \
     OmniJaws \
     OmniStyle \
+    StitchImage \
     WallpaperPicker2
 
 # Cutout control overlays
