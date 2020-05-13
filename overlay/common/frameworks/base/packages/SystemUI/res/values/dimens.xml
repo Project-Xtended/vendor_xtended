@@ -17,4 +17,9 @@
 -->
 <resources>
     <dimen name="rounded_corner_content_padding">8dp</dimen>
+
+    <!-- Slice header -->
+    <!-- 12dp -->
+    <dimen name="header_subtitle_padding">8dp</dimen>
+
 </resources>
