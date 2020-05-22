@@ -94,6 +94,9 @@ type Product_variables struct {
 		Header_libs []string
 		Shared_libs []string
 	}
+	Target_uses_fod_hack struct {
+		Cflags []string
+	}
 }
 
 type ProductVariables struct {
@@ -124,4 +127,5 @@ type ProductVariables struct {
 	Uses_qcom_um_4_4_family  *bool `json:",omitempty"`
 	Uses_qcom_um_4_9_family  *bool `json:",omitempty"`
 	Uses_qcom_um_4_14_family  *bool `json:",omitempty"`
+	Target_uses_fod_hack  *bool `json:",omitempty"`
 }
