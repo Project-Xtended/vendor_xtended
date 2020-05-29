@@ -151,13 +151,13 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 
 # Xtended packages
 PRODUCT_PACKAGES += \
+    ThemePicker \
     Calculator \
     BluetoothExt \
     ExactCalculator \
     OmniJaws \
     OmniStyle \
-    StitchImage \
-    WallpaperPicker2
+    StitchImage
 
 # Cutout control overlays
 PRODUCT_PACKAGES += \
