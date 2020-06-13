@@ -253,6 +253,7 @@ DEVICE_PACKAGE_OVERLAYS += vendor/xtended/overlay/common
 
 -include vendor/xtended/config/version.mk
 -include vendor/xtended/config/partner_gms.mk
+-include packages/apps/Plugins/plugins.mk
 
 # Allow overlays to be excluded from enforcing RRO
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/xtended/overlay
