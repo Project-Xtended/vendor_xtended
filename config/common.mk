@@ -196,3 +196,4 @@ DEVICE_PACKAGE_OVERLAYS += vendor/xtended/overlay/common
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/xtended/config/partner_gms.mk
+-include packages/apps/Plugins/plugins.mk
