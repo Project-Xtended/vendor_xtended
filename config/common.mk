@@ -88,6 +88,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/xtended/config/permissions/xtended-sysconfig.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/xtended-sysconfig.xml
 
+# Device Personalization Services Permission
+PRODUCT_COPY_FILES += \
+    vendor/xtended/config/permissions/com.google.android.as.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.google.android.as.xml \
+    vendor/xtended/config/permissions/com.google.android.as.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.android.as.xml
+
 # Copy all Xtended-specific init rc files
 $(foreach f,$(wildcard vendor/xtended/prebuilt/common/etc/init/*.rc),\
 	$(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_SYSTEM)/etc/init/$(notdir $f)))

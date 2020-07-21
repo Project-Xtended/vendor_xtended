@@ -22,4 +22,16 @@
     <allow-implicit-broadcast action="lineageos.intent.action.INITIALIZE_LINEAGE_HARDWARE" />
     <allow-implicit-broadcast action="lineageos.intent.action.LID_STATE_CHANGED" />
 
+    <!-- Specify the explicit set of other applications that AI services are allowed to
+         interact with, including the providers that back the implementation of the APIs
+         provided by the package. -->
+    <allow-association target="com.google.android.as" allowed="com.android.providers.contacts" />
+    <allow-association target="com.google.android.as" allowed="com.android.providers.media" />
+    <allow-association target="com.google.android.as" allowed="com.android.providers.telephony" />
+    <allow-association target="com.google.android.as" allowed="com.android.systemui" />
+    <allow-association target="com.google.android.as" allowed="com.google.android.gms" />
+    <allow-association target="com.google.android.as" allowed="com.google.android.gsf" />
+    <allow-association target="com.google.android.as" allowed="org.codeaurora.snapcam" />
+    <allow-association target="com.google.android.as" allowed="com.oneplus.camera" />
+    <allow-association target="com.google.android.as" allowed="com.google.android.GoogleCamera" />
 </config>

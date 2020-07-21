@@ -1,0 +1,44 @@
+<permissions>
+  <privapp-permissions package="com.google.android.as">
+    <permission name="android.permission.GET_ACCOUNTS" />
+  <permission name="android.permission.ACCESS_COARSE_LOCATION" />
+  <permission name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+  <permission name="android.permission.PACKAGE_USAGE_STATS" />
+  <permission name="android.permission.BLUETOOTH" />
+  <permission name="android.permission.BLUETOOTH_ADMIN" />
+  <permission name="android.permission.MANAGE_APP_PREDICTIONS" />
+  <permission name="android.permission.ACCESS_SHORTCUTS" />
+  <permission name="android.permission.UNLIMITED_SHORTCUTS_API_CALLS" />
+  <permission name="android.permission.SYSTEM_ALERT_WINDOW" />
+  <permission name="android.permission.FOREGROUND_SERVICE" />
+  <permission name="android.permission.MODIFY_AUDIO_ROUTING" />
+  <permission name="android.permission.RECORD_AUDIO" />
+  <permission name="android.permission.CAPTURE_MEDIA_OUTPUT" />
+  <permission name="android.permission.READ_DEVICE_CONFIG" />
+  <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+  <permission name="android.permission.MODIFY_PHONE_STATE" />
+  <permission name="android.permission.CAPTURE_AUDIO_OUTPUT" />
+  <permission name="android.permission.ACCESS_FINE_LOCATION" />
+  <permission name="android.permission.CALL_PHONE" />
+  <permission name="android.permission.READ_CALL_LOG" />
+  <permission name="android.permission.READ_CONTACTS" />
+  <permission name="android.permission.READ_CALENDAR" />
+  <permission name="android.permission.READ_SMS" />
+  <permission name="com.android.alarm.permission.SET_ALARM" />
+  <permission name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+  <permission name="android.permission.MANAGE_SOUND_TRIGGER" />
+  <permission name="android.permission.MONITOR_DEFAULT_SMS_PACKAGE" />
+  <permission name="android.permission.REQUEST_NOTIFICATION_ASSISTANT_SERVICE" />
+  <permission name="android.permission.CONTROL_INCALL_EXPERIENCE" />
+  <permission name="android.permission.READ_OEM_UNLOCK_STATE" />
+  <permission name="com.google.android.ambientindication.permission.AMBIENT_INDICATION" />
+  <permission name="android.permission.INTERNET" />
+  <permission name="android.permission.ACCESS_NETWORK_STATE" />
+  <permission name="android.permission.RECEIVE_BOOT_COMPLETED" />
+  <permission name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+  <permission name="com.google.android.providers.gsf.permission.WRITE_GSERVICES" />
+  <permission name="android.permission.CAMERA" />
+  <permission name="android.permission.UPDATE_DEVICE_STATS" />
+  </privapp-permissions>
+</permissions>
+
