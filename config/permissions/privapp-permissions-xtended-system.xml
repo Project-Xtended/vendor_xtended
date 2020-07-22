@@ -43,6 +43,10 @@
         <permission name="lineage.permission.PREVENT_POWER_KEY"/>
     </privapp-permissions>
 
+    <privapp-permissions package="com.alensw.PicFolder">
+        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+    </privapp-permissions>
+
     <!-- Additional permissions for digital wellbeing -->
     <privapp-permissions package="com.google.android.apps.wellbeing">
         <permission name="android.permission.MODIFY_PHONE_STATE"/>
