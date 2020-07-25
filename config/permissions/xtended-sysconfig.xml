@@ -34,4 +34,5 @@
     <allow-association target="com.google.android.as" allowed="org.codeaurora.snapcam" />
     <allow-association target="com.google.android.as" allowed="com.oneplus.camera" />
     <allow-association target="com.google.android.as" allowed="com.google.android.GoogleCamera" />
+    <allow-association target="com.google.android.as" allowed="org.lineageos.snap" />
 </config>
