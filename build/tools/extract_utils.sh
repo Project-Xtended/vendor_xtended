@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2017-2019 The XtendedOS Project
+# Copyright (C) 2017-2019 The MSM-Xtended Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -883,11 +883,11 @@ function write_blueprint_header() {
     fi
 
     if [ $BLUEPRINT_INITIAL_COPYRIGHT_YEAR -eq $YEAR ]; then
-        printf " * Copyright (C) $YEAR The XtendedOS Project\n" >> $1
+        printf " * Copyright (C) $YEAR The MSM-Xtended Project\n" >> $1
     elif [ $BLUEPRINT_INITIAL_COPYRIGHT_YEAR -le 2019 ]; then
-        printf " * Copyright (C) 2019-$YEAR The XtendedOS Project\n" >> $1
+        printf " * Copyright (C) 2019-$YEAR The MSM-Xtended Project\n" >> $1
     else
-        printf " * Copyright (C) $BLUEPRINT_INITIAL_COPYRIGHT_YEAR-$YEAR The XtendedOS Project\n" >> $1
+        printf " * Copyright (C) $BLUEPRINT_INITIAL_COPYRIGHT_YEAR-$YEAR The MSM-Xtended Project\n" >> $1
     fi
 
     cat << EOF >> $1
@@ -936,16 +936,16 @@ function write_makefile_header() {
             printf "# Copyright (C) 2016 The CyanogenMod Project\n" > $1
         fi
         if [ $YEAR -eq 2017 ]; then
-            printf "# Copyright (C) 2017 The XtendedOS Project\n" >> $1
+            printf "# Copyright (C) 2017 The MSM-Xtended Project\n" >> $1
         elif [ $INITIAL_COPYRIGHT_YEAR -eq $YEAR ]; then
-            printf "# Copyright (C) $YEAR The XtendedOS Project\n" >> $1
+            printf "# Copyright (C) $YEAR The MSM-Xtended Project\n" >> $1
         elif [ $INITIAL_COPYRIGHT_YEAR -le 2017 ]; then
-            printf "# Copyright (C) 2017-$YEAR The XtendedOS Project\n" >> $1
+            printf "# Copyright (C) 2017-$YEAR The MSM-Xtended Project\n" >> $1
         else
-            printf "# Copyright (C) $INITIAL_COPYRIGHT_YEAR-$YEAR The XtendedOS Project\n" >> $1
+            printf "# Copyright (C) $INITIAL_COPYRIGHT_YEAR-$YEAR The MSM-Xtended Project\n" >> $1
         fi
     else
-        printf "# Copyright (C) $YEAR The XtendedOS Project\n" > $1
+        printf "# Copyright (C) $YEAR The MSM-Xtended Project\n" > $1
     fi
 
     cat << EOF >> $1
