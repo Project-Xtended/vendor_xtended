@@ -1,4 +1,4 @@
 #
-# Lineage-specific variable clears
+# Xtended-specific variable clears
 #
 LOCAL_IGNORE_SUBDIR :=
