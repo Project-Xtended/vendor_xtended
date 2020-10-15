@@ -27,6 +27,10 @@ PRODUCT_PACKAGES += \
     libhealthd.xtended
 endif
 
+# Customizations
+PRODUCT_PACKAGES += \
+    NavigationBarMode2ButtonOverlay
+
 # Media
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     media.recorder.show_manufacturer_and_model=true
