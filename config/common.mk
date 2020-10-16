@@ -1,6 +1,9 @@
 # Allow vendor/extra to override any property by setting it first
 $(call inherit-product-if-exists, vendor/extra/product.mk)
 
+# Inherit Faceunlock
+$(call inherit-product-if-exists, external/motorola/faceunlock/config.mk)
+
 PRODUCT_BRAND ?= MSM-Xtended
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
