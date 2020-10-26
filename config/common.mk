@@ -51,6 +51,10 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/xtended/config/permissions/backup.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/backup.xml
 
+# Flipendo
+PRODUCT_COPY_FILES += \
+    vendor/xtended/config/permissions/pixel_experience_2020.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_experience_2020.xml
+
 # Xtended-specific broadcast actions whitelist
 PRODUCT_COPY_FILES += \
     vendor/xtended/config/permissions/xtended-sysconfig.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/xtended-sysconfig.xml
