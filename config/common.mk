@@ -98,6 +98,9 @@ include vendor/xtended/bootanimation/bootanimation.mk
 #Versioning
 include vendor/xtended/config/version.mk
 
+# Sepolicy
+include vendor/xtended/config/system_sepolicy.mk
+
 # Gapps
 ifeq ($(WITH_GAPPS),true)
 include vendor/gapps/config.mk
