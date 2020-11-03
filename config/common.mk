@@ -198,6 +198,10 @@ endif
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI 
 
+# SystemUI plugins
+PRODUCT_PACKAGES += \
+    QuickAccessWallet
+
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/xtended/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/xtended/overlay/common
 
