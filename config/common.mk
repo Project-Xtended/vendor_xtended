@@ -102,6 +102,10 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 PRODUCT_PACKAGES += \
     ThemePicker
 
+# Config
+PRODUCT_PACKAGES += \
+    SimpleDeviceConfig
+
 # Extra tools in Xtended
 PRODUCT_PACKAGES += \
     7z \
