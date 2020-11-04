@@ -24,9 +24,19 @@
         <item>privacy/permissions_hub_2_enabled=true</item>
         <item>privacy/permissions_hub_enabled=true</item>
 
-
         <!-- Enable IORap features -->
         <item>runtime_native_boot/iorap_perfetto_enable=true</item>
         <item>runtime_native_boot/iorap_readahead_enable=true</item>
+
+        <!-- Live Captions --> 
+        <item>device_personalization_services/Captions__manifest_url_template=https://storage.googleapis.com/captions/%{NAMESPACE}_%{VERSION}_manifest.json</item>
+        <item>device_personalization_services/Captions__model_version_v1=20190613</item>
+        <item>device_personalization_services/Captions__model_version_v1_2=20200112</item>
+        <item>device_personalization_services/Captions__speech_threshold=0.2</item>
+        <item>device_personalization_services/Captions__surface_sound_events=true</item>
+        <item>device_personalization_services/Captions__visibility_playing_duration_millis=5000</item>
+        <item>device_personalization_services/Captions__visibility_stopped_duration_millis=1500</item>
+        <item>device_personalization_services/NowPlaying__ambient_music_index_manifest_17_09_02=148:https://storage.googleapis.com/music-iq-db/updatable_db_v2/20201006-025738/manifest.json</item>
     </string-array>
+
 </resources>
