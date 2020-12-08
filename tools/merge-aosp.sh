@@ -24,7 +24,7 @@
 WORKING_DIR=$( cd $( dirname $( readlink -f "${BASH_SOURCE[0]}" ) )/../../.. && pwd )
 
 # The tag you want to merge in goes here
-BRANCH=android-${1}
+BRANCH=android-11.0.0_${1}
 
 # Manifest branch
 MANIFEST=xtended.xml
@@ -39,7 +39,7 @@ upstream=()
 failed=()
 
 # This is the array of repos to blacklist and not merge
-blacklist=('external/google' 'prebuilts/clang/host/linux-x86')
+blacklist=('external/google' 'prebuilts/clang/host/linux-x86' 'prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8' 'prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9' 'prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9' 'prebuilts/abi-dumps/vndk' 'prebuilts/tools')
 
 # Colors
 COLOR_RED='\033[0;31m'
@@ -62,8 +62,8 @@ function get_repos() {
   for i in ${repos[@]}
   do
     if grep -q "$i" /tmp/rebase.tmp; then # If Google has it and
-      if grep -q "$i" $WORKING_DIR/manifest/manifests/$MANIFEST; then # If we have it in our manifest and
-        if grep "$i" $WORKING_DIR/manifest/manifests/$MANIFEST | grep -q "remote="; then # If we track our own copy of it
+      if grep -q "$i" $WORKING_DIR/manifest/$MANIFEST; then # If we have it in our manifest and
+        if grep "$i" $WORKING_DIR/manifest/$MANIFEST | grep -q "remote="; then # If we track our own copy of it
           if ! is_in_blacklist $i; then # If it's not in our blacklist
             upstream+=("$i") # Then we need to update it
           else
