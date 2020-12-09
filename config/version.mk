@@ -1,6 +1,6 @@
 # Versioning System
 XTENDED_MAJOR_VERSION = XR
-XTENDED_RELEASE_VERSION = v2.0
+XTENDED_RELEASE_VERSION = v3.0
 
 XTENDED_BUILD_DATE := $(shell date +"%Y%m%d")
 
