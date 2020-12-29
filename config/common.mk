@@ -117,12 +117,13 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 # Disable vendor restrictions
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
-# Themes
+# Xtended packages
 PRODUCT_PACKAGES += \
     XtendedThemesStub \
     ThemePicker \
     OmniJaws \
-    CustomDoze
+    CustomDoze \
+    Snap
 
 # Extra tools in Xtended
 PRODUCT_PACKAGES += \
