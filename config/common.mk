@@ -87,6 +87,11 @@ include vendor/xtended/bootanimation/bootanimation.mk
 # Versioning
 include vendor/xtended/config/version.mk
 
+# GMS
+ifeq ($(WITH_GMS),true)
+$(call inherit-product, vendor/google/gms/gms-vendor.mk)
+endif
+
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 
