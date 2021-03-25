@@ -23,5 +23,10 @@
         <!-- Enable privacy indicators -->
         <item>privacy/permissions_hub_2_enabled=true</item>
         <item>privacy/permissions_hub_enabled=true</item>
+
+
+        <!-- Enable IORap features -->
+        <item>runtime_native_boot/iorap_perfetto_enable=true</item>
+        <item>runtime_native_boot/iorap_readahead_enable=true</item>
     </string-array>
 </resources>

@@ -187,6 +187,8 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 PRODUCT_PROPERTY_OVERRIDES += \
     iorapd.perfetto.enable=true \
     iorapd.readahead.enable=true \
+    persist.device_config.runtime_native_boot.iorap_perfetto_enable=true \
+    persist.device_config.runtime_native_boot.iorap_readahead_enable=true \
     ro.iorapd.enable=true
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/xtended/overlay
