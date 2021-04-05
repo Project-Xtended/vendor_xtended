@@ -128,6 +128,7 @@ TARGET_SCREEN_HEIGHT ?= 1920
 PRODUCT_PACKAGES += \
     ThemePicker \
     OmniJaws \
+    GamingMode \
     XtendedThemesStub
 
 # Config
