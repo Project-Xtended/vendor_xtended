@@ -13,6 +13,11 @@ endif
 
 # Xtended Release
 ifeq ($(XTENDED_BUILD_TYPE), OFFICIAL)
+
+# Updater
+PRODUCT_PACKAGES += \
+    Updater
+
   OFFICIAL_DEVICES = $(shell cat vendor/xtended/xtended.devices)
   FOUND_DEVICE =  $(filter $(XTENDED_BUILD), $(OFFICIAL_DEVICES))
     ifeq ($(FOUND_DEVICE),$(XTENDED_BUILD))
