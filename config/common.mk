@@ -119,6 +119,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Seedvault
 
+# StitchImage
+PRODUCT_PACKAGES += \
+    StitchImage
+
 # Extra tools in Xtended
 PRODUCT_PACKAGES += \
     7z \
