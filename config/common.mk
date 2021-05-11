@@ -56,6 +56,10 @@ PRODUCT_COPY_FILES += \
 $(foreach f,$(wildcard vendor/xtended/prebuilt/common/etc/init/*.rc),\
 	$(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_SYSTEM)/etc/init/$(notdir $f)))
 
+# Font service Permissions
+PRODUCT_COPY_FILES += \
+    vendor/xtended/config/permissions/privapp-permissions-xtended-system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-xtended-system_ext.xml \
+
 # Enable Android Beam on all targets
 PRODUCT_COPY_FILES += \
     vendor/xtended/config/permissions/android.software.nfc.beam.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.software.nfc.beam.xml
