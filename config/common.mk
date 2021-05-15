@@ -78,6 +78,11 @@ include vendor/xtended/config/aosp_audio.mk
 # Include Xtended audio files
 include vendor/xtended/config/xtended_audio.mk
 
+# Include Lawnchair
+ifeq ($(USE_LAWNCHAIR),true)
+include packages/apps/Lawnchair/lawnchair.mk
+endif
+
 # Include vendor xtras
 include vendor/xtras/xtras.mk
 
