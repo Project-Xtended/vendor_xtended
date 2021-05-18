@@ -114,7 +114,8 @@ TARGET_SCREEN_HEIGHT ?= 1920
 
 # Themes
 PRODUCT_PACKAGES += \
-    ThemePicker
+    ThemePicker \
+    OmniStyle
 
 # Config
 PRODUCT_PACKAGES += \
