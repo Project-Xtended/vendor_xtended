@@ -614,9 +614,10 @@ function xtendedrebase() {
 
 function mka() {
     if [ "$1" = "signed-zip" ]; then
-        m -j target-files-package otatools
-        croot
-        source vendor/xtended/scripts/sign.sh
+        if m -j target-files-package otatools; then
+            croot
+            source vendor/xtended/scripts/sign.sh
+        fi
     else
         m -j "$@"
     fi
