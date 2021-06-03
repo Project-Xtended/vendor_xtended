@@ -617,6 +617,7 @@ function mka() {
         if m -j target-files-package otatools; then
             croot
             source vendor/xtended/scripts/sign.sh
+            source vendor/xtended/scripts/update.sh
         fi
     else
         m -j "$@"
