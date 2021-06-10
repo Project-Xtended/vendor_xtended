@@ -144,9 +144,7 @@ PRODUCT_PACKAGES += \
 # Extra tools in Xtended
 PRODUCT_PACKAGES += \
     7z \
-    awk \
     bash \
-    bzip2 \
     curl \
     getcap \
     htop \
