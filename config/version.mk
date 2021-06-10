@@ -17,6 +17,10 @@ endif
 # Xtended Release
 ifeq ($(XTENDED_BUILD_TYPE), OFFICIAL)
 
+ifeq ($(WITH_GAPPS), true)
+XTENDED_BUILD_VARIANT := GAPPS
+endif
+
 # Updater
 PRODUCT_PACKAGES += \
     Updater
