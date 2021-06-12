@@ -30,6 +30,7 @@ SOONG_CONFIG_NAMESPACES += xtendedGlobalVars
 SOONG_CONFIG_xtendedGlobalVars += \
     additional_gralloc_10_usage_bits \
     bootloader_message_offset \
+    camera_skip_kind_check \
     disable_postrender_cleanup \
     has_legacy_camera_hal1 \
     has_memfd_backport \
@@ -92,6 +93,7 @@ TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY ?= libcamera_parameters
 TARGET_SURFACEFLINGER_FOD_LIB ?= surfaceflinger_fod_lib
 
 # Soong value variables
+SOONG_CONFIG_xtendedGlobalVars_camera_skip_kind_check := $(TARGET_CAMERA_SKIP_KIND_CHECK)
 SOONG_CONFIG_xtendedGlobalVars_additional_gralloc_10_usage_bits := $(TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS)
 SOONG_CONFIG_xtendedGlobalVars_bootloader_message_offset := $(BOOTLOADER_MESSAGE_OFFSET)
 SOONG_CONFIG_xtendedGlobalVars_target_init_vendor_lib := $(TARGET_INIT_VENDOR_LIB)

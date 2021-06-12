@@ -511,6 +511,28 @@ soong_config_module_type {
     ],
 }
 
+soong_config_module_type {
+    name: "camera_skip_kind_check",
+    module_type: "cc_defaults",
+    config_namespace: "xtendedGlobalVars",
+    bool_variables: ["camera_skip_kind_check"],
+    properties: [
+        "cppflags",
+    ],
+}
+
+camera_skip_kind_check {
+    name: "camera_skip_kind_check_defaults",
+    soong_config_variables: {
+        camera_skip_kind_check: {
+            cppflags: [
+                "-DCAMERA_SKIP_KIND_CHECK",
+                "-Wno-overloaded-virtual",
+            ],
+        },
+    },
+}
+
 surfaceflinger_qcom_extensions {
     name: "surfaceflinger_qcom_ext_defaults",
     soong_config_variables: {
