@@ -109,6 +109,11 @@ ifeq ($(WITH_GAPPS),true)
 $(call inherit-product, vendor/gapps/basic/config.mk)
 endif
 
+# Minimal GAPPS
+ifeq ($(MIN_GAPPS),true)
+$(call inherit-product, vendor/gapps/core/config.mk)
+endif
+
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 
