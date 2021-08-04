@@ -616,8 +616,9 @@ function mka() {
     if [ "$1" = "signed-zip" ]; then
         if m -j target-files-package otatools; then
             croot
-            source vendor/xtended/scripts/sign.sh
-            source vendor/xtended/scripts/update.sh
+            if source vendor/xtended/scripts/sign.sh; then
+                source vendor/xtended/scripts/update.sh
+            fi
         fi
     else
         m -j "$@"
