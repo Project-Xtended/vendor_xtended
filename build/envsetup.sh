@@ -621,7 +621,10 @@ function mka() {
             fi
         fi
     else
-        m -j "$@"
+        if m -j "$@"; then
+            croot
+            source vendor/xtended/scripts/update.sh
+        fi
     fi
 }
 
