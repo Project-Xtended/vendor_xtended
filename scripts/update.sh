@@ -29,7 +29,7 @@ echo '{
 			"id": "'$id'",
 			"romtype": "'$romtype'",
 			"size": '$size',
-			"url": "https:\/\/downloads.msmxtended.org\/'$device'\/'$zip'",
+			"url": "https:\/\/downloads.project-xtended.org\/'$device'\/'$zip'",
 			"version": "'$version'"
 		}
 	]
