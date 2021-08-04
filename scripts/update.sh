@@ -4,9 +4,11 @@ zip=$(get_build_var XTENDED_VERSION).zip
 device=$(echo $TARGET_PRODUCT | cut -d '_' -f2)
 buildprop=$OUT/system/build.prop
 romtype="OFFICIAL"
+variant=$(echo $zip | cut -d '-' -f4)
+name=$device'_'$variant.json
 
-if [ -f $OUT/$device.json ]; then
-	rm $OUT/$device.json
+if [ -f $OUT/$name ]; then
+	rm $OUT/$name
 fi
 
 linenr=$(grep -n "ro.system.build.date.utc" $buildprop | cut -d ':' -f1)
@@ -26,4 +28,4 @@ echo '{
 			"version": "'$version'"
 		}
 	]
-}' >> $device.json
+}' >> $OUT/$name
