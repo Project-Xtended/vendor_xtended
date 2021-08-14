@@ -7,11 +7,12 @@ XTENDED_BUILD_MAINTAINER ?= Unknown
 XTENDED_BUILD_DONATE_URL ?= https://www.paypal.me/sonal18
 XTENDED_BUILD_SUPPORT_URL ?= https://t.me/XtendedOfficial
 
-ifeq ($(WITH_GMS), true)
+ifeq ($(WITH_GAPPS), true)
 XTENDED_BUILD_VARIANT := GAPPS
+endif
 
-PRODUCT_PACKAGES += \
-    XtendedThemesStub
+ifeq ($(MIN_GAPPS), true)
+XTENDED_BUILD_VARIANT := GAPPS
 endif
 
 # Xtended Release

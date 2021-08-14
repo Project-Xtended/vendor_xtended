@@ -99,11 +99,6 @@ include vendor/xtended/bootanimation/bootanimation.mk
 # Versioning
 include vendor/xtended/config/version.mk
 
-# GMS
-ifeq ($(WITH_GMS),true)
-$(call inherit-product, vendor/google/gms/gms-vendor.mk)
-endif
-
 # GAPPS
 ifeq ($(WITH_GAPPS),true)
 $(call inherit-product, vendor/gapps/basic/config.mk)
@@ -132,7 +127,8 @@ TARGET_SCREEN_HEIGHT ?= 1920
 # Themes
 PRODUCT_PACKAGES += \
     ThemePicker \
-    OmniJaws
+    OmniJaws \
+    XtendedThemesStub
 
 # Config
 PRODUCT_PACKAGES += \
