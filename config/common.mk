@@ -126,6 +126,7 @@ TARGET_SCREEN_HEIGHT ?= 1920
 
 # Themes
 PRODUCT_PACKAGES += \
+    SoftAPManager \
     ThemePicker \
     OmniJaws \
     GamingMode \
