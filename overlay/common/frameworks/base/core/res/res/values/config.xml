@@ -190,7 +190,7 @@
     <bool name="config_supportsCamToggle">true</bool>
 
     <!-- the number of the max cached processes in the system. -->
-    <integer name="config_customizedMaxCachedProcesses">48</integer>
+    <integer name="config_customizedMaxCachedProcesses">64</integer>
     
     <!-- Attribution path for SignalDrawable as defined on a 24x24 canvas. -->
     <string name="config_signalAttributionPath" translatable="false">
