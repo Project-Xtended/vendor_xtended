@@ -21,5 +21,6 @@
     <!-- 12dp -->
     <dimen name="header_subtitle_padding">8dp</dimen>
     <dimen name="keyguard_indication_margin_bottom">7dp</dimen>
+    <dimen name="global_actions_translate">0dp</dimen>
 
 </resources>
