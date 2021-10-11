@@ -8,4 +8,8 @@ PRODUCT_PACKAGES += \
 # Include Xtended LatinIME dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/xtended/overlay/dictionaries
 
+# Enable support of one-handed mode
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.support_one_handed_mode=true
+
 $(call inherit-product, vendor/xtended/config/telephony.mk)
