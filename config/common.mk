@@ -165,6 +165,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 endif
 
+# Full GAPPS
+$(call inherit-product, vendor/xtended/config/gapps.mk)
+
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 
@@ -187,10 +190,14 @@ TARGET_SCREEN_HEIGHT ?= 1920
 # Themes
 PRODUCT_PACKAGES += \
     SoftAPManager \
-    ThemePicker \
     OmniJaws \
-    GamingMode \
+    GamingMode
+
+ifneq ($(FULL_GAPPS),true)
+PRODUCT_PACKAGES += \
+    ThemePicker \
     XtendedThemesStub
+endif
 
 # Config
 PRODUCT_PACKAGES += \
@@ -268,7 +275,7 @@ endif
 
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUI 
+    SystemUI
 
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED ?= true
@@ -281,7 +288,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.biometrics.face.xml
 endif
 
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/xtended/overlay
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/xtended/overlay/common
 DEVICE_PACKAGE_OVERLAYS += vendor/xtended/overlay/common
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
