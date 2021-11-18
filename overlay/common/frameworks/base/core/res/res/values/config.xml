@@ -191,4 +191,14 @@
 
     <!-- the number of the max cached processes in the system. -->
     <integer name="config_customizedMaxCachedProcesses">48</integer>
+    
+    <!-- Attribution path for SignalDrawable as defined on a 24x24 canvas. -->
+    <string name="config_signalAttributionPath" translatable="false">
+        M22,16.41L20.59,15l-2.09,2.09L16.41,15L15,16.41l2.09,2.09L15,20.59L16.41,22l2.09-2.08L20.59,22L22,20.59l-2.08-2.09   L22,16.41z
+    </string>
+    <!-- config_signalCutout{Height,Width}Fraction define fraction of the 24x24 canvas that
+         should be cut out to display config_signalAttributionPath. -->
+    <item name="config_signalCutoutWidthFraction" format="float" type="dimen">11</item>
+    <item name="config_signalCutoutHeightFraction" format="float" type="dimen">11</item>
+
 </resources>
