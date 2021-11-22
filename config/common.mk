@@ -228,14 +228,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.biometrics.face.xml
 endif
 
-# IORap
-PRODUCT_PROPERTY_OVERRIDES += \
-    iorapd.perfetto.enable=true \
-    iorapd.readahead.enable=true \
-    persist.device_config.runtime_native_boot.iorap_perfetto_enable=true \
-    persist.device_config.runtime_native_boot.iorap_readahead_enable=true \
-    ro.iorapd.enable=true
-
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/xtended/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/xtended/overlay/common
 
