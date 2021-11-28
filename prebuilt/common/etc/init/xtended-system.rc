@@ -1,6 +1,6 @@
 # Xtended core functionality
 on init
-    export TERMINFO /system/etc/terminfo
+    export TERMINFO /product/etc/terminfo
 
 on post-fs-data
     mkdir /cache/recovery 0770 system cache
