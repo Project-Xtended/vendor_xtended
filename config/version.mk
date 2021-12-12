@@ -6,6 +6,7 @@ XTENDED_BUILD_VARIANT ?= VANILLA
 XTENDED_BUILD_MAINTAINER ?= Unknown
 XTENDED_BUILD_DONATE_URL ?= https://project-xtended.org/#team
 XTENDED_BUILD_SUPPORT_URL ?= https://t.me/XtendedOfficial
+PROCESSOR_MODEL ?= Unknown
 
 ifeq ($(WITH_GAPPS), true)
 XTENDED_BUILD_VARIANT := GAPPS
@@ -62,4 +63,5 @@ PRODUCT_GENERIC_PROPERTIES += \
   ro.xtended.build.fingerprint=$(XTENDED_BUILD_FINGERPRINT) \
   ro.xtended.build.maintainer=$(XTENDED_BUILD_MAINTAINER) \
   ro.xtended.build.donate_url=$(XTENDED_BUILD_DONATE_URL) \
-  ro.xtended.build.support_url=$(XTENDED_BUILD_SUPPORT_URL)
+  ro.xtended.build.support_url=$(XTENDED_BUILD_SUPPORT_URL) \
+  ro.processor.model=$(PROCESSOR_MODEL)
