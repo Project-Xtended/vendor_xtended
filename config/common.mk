@@ -145,14 +145,24 @@ include vendor/xtended/bootanimation/bootanimation.mk
 # Versioning
 include vendor/xtended/config/version.mk
 
-# GAPPS
+# Google apps and services
 ifeq ($(WITH_GAPPS),true)
-$(call inherit-product, vendor/gapps/basic/config.mk)
-endif
 
-# Minimal GAPPS
-ifeq ($(MIN_GAPPS),true)
-$(call inherit-product, vendor/gapps/core/config.mk)
+$(call inherit-product, vendor/gapps/common/common-vendor.mk)
+
+# SetupWizard
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.setupwizard.rotation_locked=true \
+    setupwizard.theme=glif_v3_light
+
+# Google Assistant
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.opa.eligible_device=true
+
+# Client ID
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.com.google.clientidbase=android-google
+
 endif
 
 # Do not include art debug targets
