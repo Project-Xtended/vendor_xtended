@@ -116,7 +116,8 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 # Themes
 PRODUCT_PACKAGES += \
     XtendedThemesStub \
-    ThemePicker
+    ThemePicker \
+    RepainterServicePriv
 
 # Config
 PRODUCT_PACKAGES += \
