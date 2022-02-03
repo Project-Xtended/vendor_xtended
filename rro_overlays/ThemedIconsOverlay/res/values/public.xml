@@ -41,7 +41,6 @@
     <public type="drawable" name="themed_icon_bolt" id="0x7f020026" />
     <public type="drawable" name="themed_icon_bradesco" id="0x7f020027" />
     <public type="drawable" name="themed_icon_bromite" id="0x7f020028" />
-    <public type="drawable" name="themed_icon_btmouse" id="0x7f020029" />
     <public type="drawable" name="themed_icon_c6_bank" id="0x7f02002a" />
     <public type="drawable" name="themed_icon_caixa" id="0x7f02002b" />
     <public type="drawable" name="themed_icon_calculator" id="0x7f02002c" />
@@ -117,7 +116,7 @@
     <public type="drawable" name="themed_icon_family_link_ct" id="0x7f020072" />
     <public type="drawable" name="themed_icon_files" id="0x7f020073" />
     <public type="drawable" name="themed_icon_find_my_device" id="0x7f020074" />
-    <public type="drawable" name="themed_icon_findmydevice" id="0x7f020075" />
+    <public type="drawable" name="themed_icon_bing" id="0x7f020075" />
     <public type="drawable" name="themed_icon_alarmy" id="0x7f020076" />
     <public type="drawable" name="themed_icon_flashscore" id="0x7f020077" />
     <public type="drawable" name="themed_icon_flstudiomobile" id="0x7f020078" />
@@ -191,7 +190,7 @@
     <public type="drawable" name="themed_icon_microsoft_edge" id="0x7f0200bc" />
     <public type="drawable" name="themed_icon_mifit" id="0x7f0200bd" />
     <public type="drawable" name="themed_icon_miui_player" id="0x7f0200be" />
-    <public type="drawable" name="themed_icon_amazon_drive" id="0x7f0200bf" />
+    <public type="drawable" name="themed_icon_ana_vodafone" id="0x7f0200bf" />
     <public type="drawable" name="themed_icon_mixplorer" id="0x7f0200c0" />
     <public type="drawable" name="themed_icon_mobiett" id="0x7f0200c1" />
     <public type="drawable" name="themed_icon_mobile_legends" id="0x7f0200c2" />
@@ -240,7 +239,7 @@
     <public type="drawable" name="themed_icon_podcasts" id="0x7f0200ed" />
     <public type="drawable" name="themed_icon_poweramp" id="0x7f0200ee" />
     <public type="drawable" name="themed_icon_prime_video" id="0x7f0200ef" />
-    <public type="drawable" name="themed_icon_ps_cc" id="0x7f0200f0" />
+    <public type="drawable" name="themed_icon_file_manager" id="0x7f0200f0" />
     <public type="drawable" name="themed_icon_pubg" id="0x7f0200f1" />
     <public type="drawable" name="themed_icon_pubgmobile" id="0x7f0200f2" />
     <public type="drawable" name="themed_icon_puretuber" id="0x7f0200f3" />
@@ -366,7 +365,7 @@
     <public type="drawable" name="themed_icon_adaway" id="0x7f02016b" />
     <public type="drawable" name="themed_icon_brave" id="0x7f02016c" />
     <public type="drawable" name="themed_icon_chess" id="0x7f02016d" />
-    <public type="drawable" name="themed_icon_file_manager_plus" id="0x7f02016e" />
+    <public type="drawable" name="themed_icon_asus_gallery" id="0x7f02016e" />
     <public type="drawable" name="themed_icon_juicessh" id="0x7f02016f" />
     <public type="drawable" name="themed_icon_picgallery" id="0x7f020170" />
     <public type="drawable" name="themed_icon_substratum" id="0x7f020171" />
@@ -376,13 +375,13 @@
     <public type="drawable" name="themed_icon_hotstar" id="0x7f020175" />
     <public type="drawable" name="themed_icon_myjio" id="0x7f020176" />
     <public type="drawable" name="themed_icon_umobile" id="0x7f020177" />
-    <public type="drawable" name="themed_icon_Genshin_Impact" id="0x7f020178" />
-    <public type="drawable" name="drawable_7f020179" id="0x7f020179" />
+    <public type="drawable" name="themed_icon_genshin_impact" id="0x7f020178" />
+    <public type="drawable" name="themed_icon_microsoft_azure" id="0x7f020179" />
     <public type="drawable" name="themed_icon_opera_gx" id="0x7f02017a" />
-    <public type="drawable" name="themed_icon_Read_Chan" id="0x7f02017b" />
-    <public type="drawable" name="drawable_7f02017c" id="0x7f02017c" />
-    <public type="drawable" name="drawable_7f02017d" id="0x7f02017d" />
-    <public type="drawable" name="themed_icon_WPS_Office" id="0x7f02017e" />
+    <public type="drawable" name="themed_icon_read_chan" id="0x7f02017b" />
+    <public type="drawable" name="themed_icon_microsoft_excel" id="0x7f02017c" />
+    <public type="drawable" name="themed_icon_microsoft_launcher" id="0x7f02017d" />
+    <public type="drawable" name="themed_icon_wps_office" id="0x7f02017e" />
     <public type="drawable" name="themed_icon_aegis" id="0x7f02017f" />
     <public type="drawable" name="themed_icon_apni_kaksha" id="0x7f020180" />
     <public type="drawable" name="themed_icon_catogram" id="0x7f020181" />
@@ -408,12 +407,12 @@
     <public type="drawable" name="themed_icon_sked" id="0x7f020195" />
     <public type="drawable" name="themed_icon_sova_v_re" id="0x7f020196" />
     <public type="drawable" name="themed_icon_microsoft_todo" id="0x7f020197" />
-    <public type="drawable" name="themed_icon_twitchmod" id="0x7f020198" />
+    <public type="drawable" name="themed_icon_microsoft_math" id="0x7f020198" />
     <public type="drawable" name="themed_icon_vivaldi" id="0x7f020199" />
     <public type="drawable" name="themed_icon_wildberries" id="0x7f02019a" />
     <public type="drawable" name="themed_icon_yandex_disk" id="0x7f02019b" />
     <public type="drawable" name="themed_icon_yandex_maps" id="0x7f02019c" />
-    <public type="drawable" name="themed_icon_ykb_mobile" id="0x7f02019d" />
+    <public type="drawable" name="themed_icon_flipkart" id="0x7f02019d" />
     <public type="drawable" name="themed_icon_aviata" id="0x7f02019e" />
     <public type="drawable" name="themed_icon_beeline" id="0x7f02019f" />
     <public type="drawable" name="themed_icon_cdek" id="0x7f0201a0" />
@@ -436,13 +435,13 @@
     <public type="drawable" name="themed_icon_tele2" id="0x7f0201b1" />
     <public type="drawable" name="themed_icon_total_commander" id="0x7f0201b2" />
     <public type="drawable" name="themed_icon_ucbrowser" id="0x7f0201b3" />
-    <public type="drawable" name="themed_icon_xfolder" id="0x7f0201b4" />
+    <public type="drawable" name="themed_icon_microsoft_planner" id="0x7f0201b4" />
     <public type="drawable" name="themed_icon_yandex_music" id="0x7f0201b5" />
     <public type="drawable" name="themed_icon_yandex_translate" id="0x7f0201b6" />
     <public type="drawable" name="themed_icon_litres_audio" id="0x7f0201b7" />
     <public type="drawable" name="themed_icon_365_scores" id="0x7f0201b8" />
     <public type="drawable" name="themed_icon_8ball_pool" id="0x7f0201b9" />
-    <public type="drawable" name="themed_icon_acr_phone" id="0x7f0201ba" />
+    <public type="drawable" name="themed_icon_amazon_kindle" id="0x7f0201ba" />
     <public type="drawable" name="themed_icon_adobe_acrobat" id="0x7f0201bb" />
     <public type="drawable" name="themed_icon_adobe_scan" id="0x7f0201bc" />
     <public type="drawable" name="themed_icon_aliucord_installer" id="0x7f0201bd" />
@@ -533,12 +532,11 @@
     <public type="drawable" name="themed_icon_livin_by_mandiri" id="0x7f020212" />
     <public type="drawable" name="themed_icon_mal" id="0x7f020213" />
     <public type="drawable" name="themed_icon_marindeck" id="0x7f020214" />
-    <public type="drawable" name="themed_icon_material_files" id="0x7f020215" />
+    <public type="drawable" name="themed_icon_microsoft_powerpoint" id="0x7f020215" />
     <public type="drawable" name="themed_icon_mbank" id="0x7f020216" />
     <public type="drawable" name="themed_icon_mdgram" id="0x7f020217" />
     <public type="drawable" name="themed_icon_mercado_libre" id="0x7f020218" />
-    <public type="drawable" name="themed_icon_mercado_pago" id="0x7f020219" />
-    <public type="drawable" name="themed_icon_metro_music" id="0x7f02021a" />
+    <public type="drawable" name="themed_icon_minecraft" id="0x7f020219" />
     <public type="drawable" name="themed_icon_microsoft_authenticator" id="0x7f02021b" />
     <public type="drawable" name="themed_icon_mini_metro" id="0x7f02021c" />
     <public type="drawable" name="themed_icon_musicolet" id="0x7f02021d" />
@@ -611,7 +609,6 @@
     <public type="drawable" name="themed_icon_ps_express" id="0x7f020260" />
     <public type="drawable" name="themed_icon_steam" id="0x7f020261" />
     <public type="drawable" name="themed_icon_steam_chat" id="0x7f020262" />
-    <public type="drawable" name="themed_icon_tiktok_lite" id="0x7f020263" />
     <public type="drawable" name="themed_icon_amazon_seller" id="0x7f020264" />
     <public type="drawable" name="themed_icon_avito" id="0x7f020265" />
     <public type="drawable" name="themed_icon_drom" id="0x7f020266" />
@@ -622,7 +619,7 @@
     <public type="drawable" name="themed_icon_mail_ru" id="0x7f02026b" />
     <public type="drawable" name="themed_icon_mail_ru_cloud" id="0x7f02026c" />
     <public type="drawable" name="themed_icon_microsoft_lens" id="0x7f02026d" />
-    <public type="drawable" name="themed_icon_moto_sound" id="0x7f02026e" />
+    <public type="drawable" name="themed_icon_shopsy" id="0x7f02026e" />
     <public type="drawable" name="themed_icon_ozon" id="0x7f02026f" />
     <public type="drawable" name="themed_icon_qr_scan" id="0x7f020270" />
     <public type="drawable" name="themed_icon_quizlet" id="0x7f020271" />
@@ -631,7 +628,7 @@
     <public type="drawable" name="themed_icon_smartbank" id="0x7f020274" />
     <public type="drawable" name="themed_icon_tinkoff_accounting" id="0x7f020275" />
     <public type="drawable" name="themed_icon_tinkoff_investing" id="0x7f020276" />
-    <public type="drawable" name="themed_icon_tinkoff_platinum" id="0x7f020277" />
+    <public type="drawable" name="themed_icon_photon_camera" id="0x7f020277" />
     <public type="drawable" name="themed_icon_track24" id="0x7f020278" />
     <public type="drawable" name="themed_icon_vivacut" id="0x7f020279" />
     <public type="drawable" name="themed_icon_vk_mail" id="0x7f02027a" />
@@ -641,8 +638,24 @@
     <public type="drawable" name="themed_icon_delivery_club" id="0x7f02027e" />
     <public type="drawable" name="themed_icon_vkx" id="0x7f02027f" />
     <public type="drawable" name="themed_icon_yandex_eda" id="0x7f020280" />
-    <public type="drawable" name="themed_icon_yandex_lavka" id="0x7f020281" />
+    <public type="drawable" name="themed_icon_sony_music" id="0x7f020281" />
     <public type="drawable" name="themed_icon_yelp" id="0x7f020282" />
+    <public type="drawable" name="themed_icon_3dmark" id="0x7f020283" />
+    <public type="drawable" name="themed_icon_aida64" id="0x7f020284" />
+    <public type="drawable" name="themed_icon_betternet" id="0x7f020285" />
+    <public type="drawable" name="themed_icon_google_opinion" id="0x7f020286" />
+    <public type="drawable" name="themed_icon_package_names" id="0x7f020287" />
+    <public type="drawable" name="themed_icon_intersvyaz" id="0x7f020288" />
+    <public type="drawable" name="themed_icon_quickstep" id="0x7f020289" />
+    <public type="drawable" name="themed_icon_realme_link" id="0x7f02028a" />
+    <public type="drawable" name="themed_icon_ru_post" id="0x7f02028b" />
+    <public type="drawable" name="themed_icon_must" id="0x7f02028c" />
+    <public type="drawable" name="themed_icon_notebook" id="0x7f02028d" />
+    <public type="drawable" name="themed_icon_agc" id="0x7f02028e" />
+    <public type="drawable" name="themed_icon_vkontakte" id="0x7f02028f" />
+    <public type="drawable" name="themed_icon_ykb" id="0x7f020290" />
+    <public type="drawable" name="themed_icons_tt" id="0x7f020291" />
+    <public type="drawable" name="themed_icon_tachiyomi" id="0x7f020292" />
     <public type="xml" name="grayscale_icon_map" id="0x7f030000" />
     <public type="array" name="grayscale_calendar_icons" id="0x7f040000" />
     <public type="array" name="grayscale_clock_icons" id="0x7f040001" />
