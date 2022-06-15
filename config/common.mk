@@ -175,8 +175,10 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     dalvik.vm.systemuicompilerfilter=speed
 
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/xtended/overlay
-DEVICE_PACKAGE_OVERLAYS += vendor/xtended/overlay/common
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/xtended/overlay/no-rro
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/xtended/overlay/common \
+    vendor/xtended/overlay/no-rro
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/xtended/config/partner_gms.mk
