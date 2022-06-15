@@ -81,6 +81,9 @@ include vendor/xtended/config/xtended_audio.mk
 # Include vendor xtras
 include vendor/xtras/xtras.mk
 
+# Include to override any property by setting it first
+include vendor/xtended/config/xtended.mk
+
 # Stop library check
 RELAX_USES_LIBRARY_CHECK := true
 
@@ -137,10 +140,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     vendor/xtended/prebuilt/common/etc/init/init.openssh.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.openssh.rc
-
-# Storage manager
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.storage_manager.enabled=true
 
 # These packages are excluded from user builds
 PRODUCT_PACKAGES_DEBUG += \
