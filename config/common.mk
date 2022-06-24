@@ -134,6 +134,12 @@ PRODUCT_PACKAGES += \
     setcap \
     vim
 
+# Filesystems tools
+PRODUCT_PACKAGES += \
+    fsck.ntfs \
+    mkfs.ntfs \
+    mount.ntfs
+
 # Openssh
 PRODUCT_PACKAGES += \
     scp \
