@@ -1,7 +1,0 @@
-# Usage: ${kernel_repos[@]}
-readonly kernel_repos=(
-  barbet
-  redbull
-  msm-4.14
-  msm-4.9
-)
