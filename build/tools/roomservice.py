@@ -213,10 +213,7 @@ def fetch_dependencies(repo_path, fallback_branch=None):
         return
     _fetch_dep_cache.append(repo_path)
 
-            if not os.path.isdir(dependency['target_path']):
-                syncable_repos.append(dependency['target_path'])
-
-        dependencies_file.close()
+    print('Looking for dependencies')
 
     dep_p = '/'.join((repo_path, custom_dependencies))
     if os.path.exists(dep_p):
