@@ -31,7 +31,6 @@ SOONG_CONFIG_xtendedGlobalVars += \
     additional_gralloc_10_usage_bits \
     bootloader_message_offset \
     camera_needs_client_info_lib \
-    disable_postrender_cleanup \
     needs_camera_boottime \
     target_init_vendor_lib \
     target_ld_shim_libs \
@@ -56,7 +55,6 @@ endif
 
 # Soong bool variables
 SOONG_CONFIG_xtendedGlobalVars_camera_needs_client_info_lib := $(TARGET_CAMERA_NEEDS_CLIENT_INFO_LIB)
-SOONG_CONFIG_xtendedGlobalVars_disable_postrender_cleanup := $(TARGET_DISABLE_POSTRENDER_CLEANUP)
 SOONG_CONFIG_xtendedGlobalVars_needs_camera_boottime := $(TARGET_CAMERA_BOOTTIME_TIMESTAMP)
 SOONG_CONFIG_xtendedGlobalVars_uses_egl_display_array := $(TARGET_USES_EGL_DISPLAY_ARRAY)
 SOONG_CONFIG_xtendedNvidiaVars_uses_nvidia_enhancements := $(NV_ANDROID_FRAMEWORK_ENHANCEMENTS)
