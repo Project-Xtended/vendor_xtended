@@ -42,7 +42,7 @@ except ImportError:
 DEBUG = False
 
 custom_local_manifest = ".repo/local_manifests/xtended.xml"
-custom_default_revision =  os.getenv('ROOMSERVICE_DEFAULT_BRANCH', 'xs')
+custom_default_revision =  os.getenv('ROOMSERVICE_DEFAULT_BRANCH', 'xt')
 custom_dependencies = "xtended.dependencies"
 org_manifest = "Xtended-Devices"  # leave empty if org is provided in manifest
 org_display = "Xtended-Devices"  # needed for displaying
