@@ -29,7 +29,6 @@ $(foreach v,$(EXPORT_TO_SOONG),$(eval $(call addVar,$(v))))
 SOONG_CONFIG_NAMESPACES += xtendedGlobalVars
 SOONG_CONFIG_xtendedGlobalVars += \
     additional_gralloc_10_usage_bits \
-    camera_needs_client_info_lib \
     target_init_vendor_lib \
     target_ld_shim_libs \
     target_surfaceflinger_udfps_lib \
@@ -51,7 +50,6 @@ SOONG_CONFIG_xtendedQcomVars += \
 endif
 
 # Soong bool variables
-SOONG_CONFIG_xtendedGlobalVars_camera_needs_client_info_lib := $(TARGET_CAMERA_NEEDS_CLIENT_INFO_LIB)
 SOONG_CONFIG_xtendedGlobalVars_uses_egl_display_array := $(TARGET_USES_EGL_DISPLAY_ARRAY)
 SOONG_CONFIG_xtendedNvidiaVars_uses_nvidia_enhancements := $(NV_ANDROID_FRAMEWORK_ENHANCEMENTS)
 SOONG_CONFIG_xtendedQcomVars_supports_extended_compress_format := $(AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT)
