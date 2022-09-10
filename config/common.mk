@@ -78,6 +78,9 @@ include vendor/xtended/config/xtended_audio.mk
 # Include vendor xtras
 include vendor/xtras/xtras.mk
 
+# Stop library check
+RELAX_USES_LIBRARY_CHECK := true
+
 # Bootanimation
 include vendor/xtended/bootanimation/bootanimation.mk
 
