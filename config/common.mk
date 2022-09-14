@@ -117,18 +117,13 @@ PRODUCT_PACKAGES += \
 
 # Extra tools in Xtended
 PRODUCT_PACKAGES += \
-    7z \
     bash \
     curl \
     getcap \
     htop \
-    lib7z \
     nano \
-    pigz \
     setcap \
-    unrar \
-    vim \
-    zip
+    vim
 
 # Openssh
 PRODUCT_PACKAGES += \
@@ -140,13 +135,9 @@ PRODUCT_PACKAGES += \
     ssh-keygen \
     start-ssh
 
-# rsync
-PRODUCT_PACKAGES += \
-    rsync
-
 PRODUCT_COPY_FILES += \
     vendor/xtended/prebuilt/common/etc/init/init.openssh.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.openssh.rc
-    
+
 # Storage manager
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.storage_manager.enabled=true
