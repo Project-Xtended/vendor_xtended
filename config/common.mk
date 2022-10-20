@@ -113,8 +113,10 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 # Disable vendor restrictions
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
-# Themes
+# Packages
 PRODUCT_PACKAGES += \
+    Aperture \
+    Gallery2 \
     XtendedThemesStub \
     ThemePicker \
     RepainterServicePriv
