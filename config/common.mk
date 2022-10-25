@@ -94,9 +94,11 @@ include vendor/xtended/bootanimation/bootanimation.mk
 # Versioning
 include vendor/xtended/config/version.mk
 
-# GMS
+# GMS/GAPPS
 ifeq ($(WITH_GMS),true)
 $(call inherit-product, vendor/gms/products/gms.mk)
+else ifeq ($(WITH_GAPPS),true)
+$(call inherit-product, vendor/gapps/common/common-vendor.mk)
 endif
 
 # Do not include art debug targets
