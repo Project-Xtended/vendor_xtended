@@ -9,6 +9,7 @@ XTENDED_BUILD_SUPPORT_URL ?= https://t.me/XtendedOfficial
 PROCESSOR_MODEL ?= Unknown
 
 ifeq ($(WITH_GMS), true)
+else ifeq ($(WITH_GAPPS),true)
 XTENDED_BUILD_VARIANT := GAPPS
 endif
 
