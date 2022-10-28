@@ -116,6 +116,7 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 PRODUCT_PACKAGES += \
     Aperture \
     Gallery2 \
+    GameSpace \
     XtendedThemesStub \
     ThemePicker \
     RepainterServicePriv
