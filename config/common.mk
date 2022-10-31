@@ -88,9 +88,6 @@ include vendor/xtras/xtras.mk
 # Stop library check
 RELAX_USES_LIBRARY_CHECK := true
 
-# Bootanimation
-include vendor/xtended/bootanimation/bootanimation.mk
-
 # Versioning
 include vendor/xtended/config/version.mk
 
