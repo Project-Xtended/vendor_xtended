@@ -30,6 +30,13 @@
         <permission name="android.permission.SET_ACTIVITY_WATCHER"/>
         <permission name="android.permission.SHUTDOWN"/>
         <permission name="android.permission.WRITE_APN_SETTINGS"/>
+        <permission name="lineageos.permission.HARDWARE_ABSTRACTION_ACCESS" />
+        <permission name="lineageos.permission.MANAGE_LIVEDISPLAY" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.android.settings">
+        <permission name="lineageos.permission.HARDWARE_ABSTRACTION_ACCESS" />
+        <permission name="lineageos.permission.MANAGE_LIVEDISPLAY" />
     </privapp-permissions>
 
     <privapp-permissions package="com.android.launcher3">
