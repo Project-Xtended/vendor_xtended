@@ -44,14 +44,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 endif
 endif
 
-# Backup Services whitelist
-PRODUCT_COPY_FILES += \
-    vendor/xtended/config/permissions/backup.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/backup.xml
-
-# Xtended-specific broadcast actions whitelist
-PRODUCT_COPY_FILES += \
-    vendor/xtended/config/permissions/xtended-sysconfig.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/xtended-sysconfig.xml
-
 # Copy all Xtended-specific init rc files
 $(foreach f,$(wildcard vendor/xtended/prebuilt/common/etc/init/*.rc),\
 	$(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_SYSTEM)/etc/init/$(notdir $f)))
@@ -96,10 +88,6 @@ endif
 
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
-
-# Priv-app Permissions
-PRODUCT_COPY_FILES += \
-    vendor/xtended/config/permissions/xtended-permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/xtended-permissions.xml
 
 # Strip the local variable table and the local variable type table to reduce
 # the size of the system image. This has no bearing on stack traces, but will
