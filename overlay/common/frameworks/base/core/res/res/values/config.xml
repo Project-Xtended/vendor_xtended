@@ -53,6 +53,8 @@
         <item>com.shannon.imsservice</item>
         <!-- SystemUI -->
         <item>com.android.systemui</item>
+        <!-- Tethering -->
+        <item>com.android.networkstack.tethering</item>
     </string-array>
 
     <bool name="config_cellBroadcastAppLinks">true</bool>
