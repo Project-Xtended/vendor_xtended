@@ -114,7 +114,6 @@ PRODUCT_PACKAGES += \
     Aperture \
     Gallery2 \
     GameSpace \
-    XtendedThemesStub \
     ThemePicker \
     RepainterServicePriv
 
