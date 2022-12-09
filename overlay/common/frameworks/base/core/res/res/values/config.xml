@@ -193,6 +193,6 @@
     <string name="config_clockFontFamily" translatable="false">@font/google_sans_clock</string>
     
     <!-- Default component for QR code scanner -->
-    <string name="config_defaultQrCodeComponent">com.google.android.gms/.mlkit.barcode.ui.PlatformBarcodeScanningActivityProxy</string>
+    <string name="config_defaultQrCodeComponent" translatable="false">com.google.android.gms/.mlkit.barcode.ui.PlatformBarcodeScanningActivityProxy</string>
 
 </resources>
