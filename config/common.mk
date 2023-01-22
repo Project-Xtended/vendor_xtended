@@ -119,6 +119,7 @@ PRODUCT_PACKAGES += \
     Aperture \
     Gallery2 \
     GameSpace \
+    ParallelSpace \
     ThemePicker \
     RepainterServicePriv
 
