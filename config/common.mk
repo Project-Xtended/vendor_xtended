@@ -124,6 +124,7 @@ PRODUCT_PACKAGES += \
     GameSpace \
     ParallelSpace \
     ThemePicker \
+    ThemesStub \
     RepainterServicePriv
 
 # Config
