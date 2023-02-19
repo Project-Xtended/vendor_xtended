@@ -122,6 +122,7 @@ PRODUCT_PACKAGES += \
     Aperture \
     Gallery2 \
     GameSpace \
+    OmniJaws \
     ParallelSpace \
     ThemePicker \
     ThemesStub \
