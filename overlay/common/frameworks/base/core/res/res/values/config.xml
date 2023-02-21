@@ -130,6 +130,9 @@
         <item>org.briarproject.briar.android</item>
     </string-array>
 
+    <!-- Colon separated list of package names that should be granted Notification Listener access -->
+    <string name="config_defaultListenerAccessPackages" translatable="false">com.google.android.as:com.google.android.projection.gearhead:com.android.launcher3</string>
+    
     <!-- Flag indicating which package name can access DeviceConfig table -->
     <string name="config_deviceConfiguratorPackageName" translatable="false">org.protonaosp.deviceconfig</string>
 
