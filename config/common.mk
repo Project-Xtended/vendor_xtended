@@ -45,9 +45,10 @@ endif
 endif
 
 # Copy all Xtended-specific init rc files
-$(foreach f,$(wildcard vendor/xtended/prebuilt/common/etc/init/*.rc),\
-	$(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_SYSTEM)/etc/init/$(notdir $f)))
-
+PRODUCT_COPY_FILES += \
+    vendor/xtended/prebuilt/common/etc/init/init.xtended-system_ext.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.xtended-system_ext.rc \
+    vendor/xtended/prebuilt/common/etc/init/xtended-init.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/xtended-init.rc
+    
 # Enable gestural navigation overlay to match default navigation mode
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
