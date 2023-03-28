@@ -55,6 +55,8 @@
         <item>com.android.systemui</item>
         <!-- Tethering -->
         <item>com.android.networkstack.tethering</item>
+        <!-- OmniJaws -->
+        <item>org.omnirom.omnijaws</item>
     </string-array>
 
     <bool name="config_cellBroadcastAppLinks">true</bool>
