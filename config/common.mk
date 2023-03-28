@@ -126,7 +126,6 @@ PRODUCT_PACKAGES += \
     OmniJaws \
     ParallelSpace \
     ThemePicker \
-    ThemesStub \
     RepainterServicePriv
 
 # Config
