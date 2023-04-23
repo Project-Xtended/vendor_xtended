@@ -44,6 +44,11 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 endif
 endif
 
+# Brightness slider styles
+PRODUCT_PACKAGES += \
+    BrightnessSliderFilledOverlay \
+    BrightnessSliderThinOverlay
+
 # Copy all Xtended-specific init rc files
 PRODUCT_COPY_FILES += \
     vendor/xtended/prebuilt/common/etc/init/init.xtended-system_ext.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.xtended-system_ext.rc \
