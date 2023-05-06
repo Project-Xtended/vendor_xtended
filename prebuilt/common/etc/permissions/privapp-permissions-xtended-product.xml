@@ -54,5 +54,31 @@
         <permission name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME"/>
     </privapp-permissions>
 
+    <privapp-permissions package="com.google.android.apps.turbo">
+        <permission name="android.permission.ACCESS_AMBIENT_LIGHT_STATS" />
+        <permission name="android.permission.BATTERY_PREDICTION"/>
+        <permission name="android.permission.BATTERY_STATS" />
+        <permission name="android.permission.BRIGHTNESS_SLIDER_USAGE"/>
+        <permission name="android.permission.CHANGE_APP_IDLE_STATE"/>
+        <permission name="android.permission.CHANGE_APP_LAUNCH_TIME_ESTIMATE"/>
+        <permission name="android.permission.CONFIGURE_DISPLAY_BRIGHTNESS"/>
+        <permission name="android.permission.DUMP"/>
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        <permission name="android.permission.POWER_SAVER"/>
+        <permission name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.google.android.settings.intelligence">
+        <permission name="android.permission.BATTERY_STATS"/>
+        <permission name="android.permission.BLUETOOTH_CONNECT"/>
+        <permission name="android.permission.MANAGE_FINGERPRINT"/>
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <permission name="android.permission.READ_DEVICE_CONFIG"/>
+        <permission name="android.permission.READ_SEARCH_INDEXABLES"/>
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+        <permission name="android.permission.WRITE_DEVICE_CONFIG"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.WRITE_SETTINGS_HOMEPAGE_DATA"/>
+    </privapp-permissions>
 </permissions>
 
