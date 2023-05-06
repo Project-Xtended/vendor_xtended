@@ -93,6 +93,12 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 PRODUCT_SYSTEM_SERVER_DEBUG_INFO := false
 WITH_DEXPREOPT_DEBUG_INFO := false
 
+# Xtended Permissions: -
+PRODUCT_COPY_FILES += \
+   vendor/xtended/prebuilt/common/etc/permissions/privapp-permissions-xtended-system.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-xtended.xml \
+   vendor/xtended/prebuilt/common/etc/permissions/privapp-permissions-xtended-system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-xtended.xml \
+   vendor/xtended/prebuilt/common/etc/permissions/privapp-permissions-xtended-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-xtended.xml
+
 # Permissions for Google product apps
 PRODUCT_COPY_FILES += \
     vendor/xtended/prebuilt/common/etc/permissions/default-permissions-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/default-permissions-product.xml
