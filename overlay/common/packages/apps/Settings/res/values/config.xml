@@ -39,4 +39,8 @@
     <string name="config_wallpaper_picker_action" translatable="false">android.intent.action.MAIN</string>
     <!-- Action name for the styles & wallpaper picker activity. -->
     <string name="config_styles_and_wallpaper_picker_action" translatable="false">android.intent.action.MAIN</string>
+    <!-- Action name for the SettingsIntelligence package name -->
+    <string name="config_settingsintelligence_log_action">com.google.android.settings.intelligence.contextualcards.CARD_INTERACTION_RECEIVER</string>
+    <string name="config_settingsintelligence_package_name">com.google.android.settings.intelligence</string>
+
 </resources>
