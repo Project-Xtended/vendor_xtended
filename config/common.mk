@@ -211,6 +211,9 @@ PRODUCT_PACKAGE_OVERLAYS += \
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/xtended/config/partner_gms.mk
 
+# Pixel Framework
+$(call inherit-product, vendor/pixel-framework/config.mk)
+
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED ?= true
 ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED),true)
