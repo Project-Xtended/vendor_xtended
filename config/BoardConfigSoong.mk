@@ -33,6 +33,7 @@ SOONG_CONFIG_xtendedGlobalVars += \
     disable_bluetooth_le_set_host_feature \
     gralloc_handle_has_reserved_size \
     camera_needs_client_info_lib \
+    camera_needs_client_info_lib_oplus \
     needs_camera_boottime \
     target_init_vendor_lib \
     target_ld_shim_libs \
@@ -59,6 +60,7 @@ endif
 # Soong bool variables
 SOONG_CONFIG_xtendedGlobalVars_gralloc_handle_has_reserved_size := $(TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE)
 SOONG_CONFIG_xtendedGlobalVars_camera_needs_client_info_lib := $(TARGET_CAMERA_NEEDS_CLIENT_INFO_LIB)
+SOONG_CONFIG_xtendedGlobalVars_camera_needs_client_info_lib_oplus := $(TARGET_CAMERA_NEEDS_CLIENT_INFO_LIB_OPLUS)
 SOONG_CONFIG_xtendedGlobalVars_needs_camera_boottime := $(TARGET_CAMERA_BOOTTIME_TIMESTAMP)
 SOONG_CONFIG_xtendedGlobalVars_uses_egl_display_array := $(TARGET_USES_EGL_DISPLAY_ARRAY)
 SOONG_CONFIG_xtendedGlobalVars_uses_oplus_camera := $(TARGET_USES_OPLUS_CAMERA)
