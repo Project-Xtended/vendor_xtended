@@ -1,5 +1,7 @@
 # Allow vendor/extra to override any property by setting it first
 $(call inherit-product-if-exists, vendor/extra/product.mk)
+$(call inherit-product-if-exists, vendor/xtended/config/xtended.mk)
+$(call inherit-product-if-exists, vendor/xtras/xtras.mk)
 
 PRODUCT_BRAND ?= Project-Xtended
 
@@ -71,9 +73,6 @@ include vendor/xtended/config/aosp_audio.mk
 # Include Xtended audio files
 include vendor/xtended/config/xtended_audio.mk
 
-# Include vendor xtras
-include vendor/xtras/xtras.mk
-
 # Stop library check
 RELAX_USES_LIBRARY_CHECK := true
 
@@ -128,16 +127,6 @@ ifneq ($(TARGET_DISABLE_EPPE),true)
 # Require all requested packages to exist
 $(call enforce-product-packages-exist-internal,$(wildcard device/*/$(LINEAGE_BUILD)/$(TARGET_PRODUCT).mk),product_manifest.xml rild Calendar Launcher3 Launcher3Go Launcher3QuickStep Launcher3QuickStepGo android.hidl.memory@1.0-impl.vendor vndk_apex_snapshot_package)
 endif
-
-# Packages
-PRODUCT_PACKAGES += \
-    Aperture \
-    Gallery2 \
-    GameSpace \
-    OmniJaws \
-    ParallelSpace \
-    ThemePicker \
-    RepainterServicePriv
 
 # Config
 PRODUCT_PACKAGES += \
@@ -231,14 +220,4 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.face_unlock_service.enabled=$(TARGET_FACE_UNLOCK_SUPPORTED)
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.biometrics.face.xml
-endif
-
-# Blurs
-ifeq ($(TARGET_ENABLE_BLUR), true)
-PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    ro.sf.blurs_are_expensive=1 \
-    ro.surface_flinger.supports_background_blur=1
-else
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.launcher.blur.appLaunch=0
 endif
